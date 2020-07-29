@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Ben&#x27;s Blog",
+    "title": "Ben Throop - Blog",
     "description": "",
     "home_page_url": "https://benthroop.github.io",
     "feed_url": "https://benthroop.github.io/feed.json",
@@ -13,15 +13,16 @@
             "id": "https://benthroop.github.io/and-so-it-begins/",
             "url": "https://benthroop.github.io/and-so-it-begins/",
             "title": "And so it begins.",
-            "summary": " I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that, but then right after got so deep into making Headmaster that I didn't dedicate the time. For the past two years I ran an experiment in growing my studio&hellip;",
-            "content_html": "<p><img loading=\"lazy\" src=\"https://www.lowestrates.ca/sites/default/files/styles/article_main/public/jail.jpeg?itok=lHyvqjVj\" data-is-external-image=\"true\"  alt=\"Can you manage your money from jail or prison? | LowestRates.ca\"></p>\n<p>I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that, but then right after got so deep into making Headmaster that I didn't dedicate the time.</p>\n<p>For the past two years I ran an experiment in growing my studio with new talent, but it left me wanting the time to build my own projects. So, here I go. Doing my own stuff again.</p>\n<p>It's been a few weeks and I've been tinkering on some code... an old little space shooter project that I'm fixing up like a beat up car. I want to talk about it a bit, so here we go. </p>\n<p>BTW this blog is build with a thing called Publii. It's like Wordpress, but the app is on your computer and it generates the site as html/css. It seems cool, so giving it a shot. I gave \"fancy\" static site generators like Jekyll and Hugo a good look, but you have to be a web head to get these things. Ain't got time for that. </p>\n<p>Keeping it fast and loose. </p>",
+            "summary": "<p>I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that, but then right after got so deep into making Headmaster that I didn't dedicate the time.</p>\n",
+            "content_html": "<p>I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that, but then right after got so deep into making Headmaster that I didn't dedicate the time.</p>\n\n<p>For the past two years I ran an experiment in growing my studio with new talent, but it left me wanting the time to build my own projects. So, here I go. Doing my own stuff again.</p>\n<p>It's been a few weeks and I've been tinkering on some code... an old little space shooter project that I'm fixing up like a beat up car. I want to talk about it a bit, so here we go. </p>\n<p>BTW this blog is build with a thing called Publii. It's like Wordpress, but the app is on your computer and it generates the site as html/css. It seems cool, so giving it a shot. I gave \"fancy\" static site generators like Jekyll and Hugo a good look, but you have to be a web head to get these things. Ain't got time for that. </p>\n<p>Keeping it fast and loose. </p>",
+            "image": "https://benthroop.github.io/media/posts/1/jail.jpeg",
             "author": {
                 "name": "Ben"
             },
             "tags": [
             ],
-            "date_published": "2020-07-29T14:42:22-04:00",
-            "date_modified": "2020-07-29T14:42:22-04:00"
+            "date_published": "2020-07-29T15:40:55-04:00",
+            "date_modified": "2020-07-29T15:40:55-04:00"
         }
     ]
 }

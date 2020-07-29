@@ -1,2 +1,0 @@
-# benthroop.github.io
-Blog

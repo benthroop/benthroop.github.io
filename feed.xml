@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Ben Throop - Blog</title>
+    <title>Ben Throop&#x27;s Blog</title>
     <link href="https://benthroop.github.io/feed.xml" rel="self" />
     <link href="https://benthroop.github.io" />
     <updated>1969-12-31T19:00:00-05:00</updated>
@@ -17,22 +17,25 @@
         <link href="https://benthroop.github.io/and-so-it-begins/"/>
         <id>https://benthroop.github.io/and-so-it-begins/</id>
 
-        <updated>2020-07-29T15:40:55-04:00</updated>
+        <updated>2020-07-29T16:45:44-04:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://benthroop.github.io/media/posts/1/jail.jpeg" alt="" />
-                    <p>I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that, but then right after got so deep into making Headmaster that I didn't dedicate the time.</p>
-
+                    I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that, but then right after got so deep into making Headmaster that&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://benthroop.github.io/media/posts/1/jail.jpeg" alt="" />
                 <p>I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that, but then right after got so deep into making Headmaster that I didn't dedicate the time.</p>
-
 <p>For the past two years I ran an experiment in growing my studio with new talent, but it left me wanting the time to build my own projects. So, here I go. Doing my own stuff again.</p>
 <p>It's been a few weeks and I've been tinkering on some code... an old little space shooter project that I'm fixing up like a beat up car. I want to talk about it a bit, so here we go. </p>
 <p>BTW this blog is build with a thing called Publii. It's like Wordpress, but the app is on your computer and it generates the site as html/css. It seems cool, so giving it a shot. I gave "fancy" static site generators like Jekyll and Hugo a good look, but you have to be a web head to get these things. Ain't got time for that. </p>
+<p>Let's test a GIF:</p>
+<figure class="post__image"><img loading="lazy"  src="https://benthroop.github.io/media/posts/1/PARTYMODE-GIF-RobertWheel.gif" alt=""></figure>
+<p> </p>
+<p>And a Youtube Embed:</p>
+<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/4vKQUiiC7jg" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p>Keeping it fast and loose. </p>
             ]]>
         </content>

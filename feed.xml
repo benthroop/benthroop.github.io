@@ -10,6 +10,30 @@
     <id>https://benthroop.github.io</id>
 
     <entry>
+        <title>Setting up this blog for editing on all of my computers.</title>
+        <author>
+            <name>Ben</name>
+        </author>
+        <link href="https://benthroop.github.io/setting-up-this-blog-for-editing-on-all-of-my-computers/"/>
+        <id>https://benthroop.github.io/setting-up-this-blog-for-editing-on-all-of-my-computers/</id>
+
+        <updated>2020-07-30T09:59:09-04:00</updated>
+            <summary>
+                <![CDATA[
+                    So yeah I'm using Publii for this and I have been really wringing my hands over it, but today I got editing of the content from multiple computers working well. Publii is like a really stripped down and simplified Wordpress, but instead of requiring an&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>So yeah I'm using Publii for this and I have been really wringing my hands over it, but today I got editing of the content from multiple computers working well. Publii is like a really stripped down and simplified Wordpress, but instead of requiring an entire stack of server based tech, it is just a program you can install on Windows.</p>
+<p>This might seem like a step backwards if you can only edit your stuff from one computer, but fortunately, it's possible to store the source data in Dropbox and sync it between more than one machine. </p>
+<p>Anyway I don't really want to make this entire blog about having a blog, but after facing nightmare scenario of using Jekyll and writing posts in Markdown (yeesh), this is amazing.</p>
+<p>To make this post not a complete waste, here's the entrance to Unity '09 in San Francisco. Unity spared no expense. I think this was the Unite where they announced a free version.</p>
+<figure class="post__image"><img loading="lazy"  src="https://benthroop.github.io/media/posts/2/SANY0094.JPG" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://benthroop.github.io/media/posts/2/responsive/SANY0094-xs.JPG 300w ,https://benthroop.github.io/media/posts/2/responsive/SANY0094-sm.JPG 480w ,https://benthroop.github.io/media/posts/2/responsive/SANY0094-md.JPG 768w"  alt=""></figure>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>And so it begins.</title>
         <author>
             <name>Ben</name>
@@ -17,7 +41,7 @@
         <link href="https://benthroop.github.io/and-so-it-begins/"/>
         <id>https://benthroop.github.io/and-so-it-begins/</id>
 
-        <updated>2020-07-29T17:01:23-04:00</updated>
+        <updated>2020-07-30T09:59:09-04:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://benthroop.github.io/media/posts/1/jail.jpeg" alt="" />

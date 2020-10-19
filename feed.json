@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://benthroop.github.io/dont-make-me-work/",
+            "url": "https://benthroop.github.io/dont-make-me-work/",
+            "title": "Don&#x27;t Make Me Work",
+            "summary": "It's interesting to reflect on how my taste in games has changed over the years. Back in my 20's, I was into Counterstrike. Nowadays, kids in their 20's are into Counterstrike. But I've gotten older. My day is a lot of work. I'm solving problems&hellip;",
+            "content_html": "<p>It's interesting to reflect on how my taste in games has changed over the years. Back in my 20's, I was into Counterstrike. Nowadays, kids in their 20's are into Counterstrike.</p>\n<p>But I've gotten older.</p>\n<p>My day is a lot of work. I'm solving problems all the time, in both business and family. How can I get my daughter to eat broccoli? (answer: once she finishes, she gets a pancake). How can I build a game that is both true to myself as a creator and commercially viable? (answer: TBD). How can my wife and I have an intimate and fulfilling relationship when we are literally never alone? (answer: please email me, haven't got this one figured out).</p>\n<p>So yeah, once I sit down to \"play a game\", I've just gotten done playing several games concurrently with varying degrees of success. I don't really want to learn new rules, compete against people who have invested time I'll never have, or, well, in essence, lose. I don't really want to lose. I want to play games that are just fun to play. If they are win or lose games, I want to win. </p>\n<p>That means multiplayer games are generally out because humans like winning and everyone can't win. Sorry LIBTARDS! Man what a terrible word that is! But still, it's true. Everyone cannot win unless the game is designed to not be won at all.</p>\n<p>That said, some games can only be lost, and somehow that is a happy place to be. Maybe part of reaching this point in life is recognizing that many games are a battle to simply survive. So survival games where eventual death is either lurking over the hill or right on top of you, tend to be quite appealing.</p>\n<p>Noita has been my </p>",
+            "author": {
+                "name": "Ben"
+            },
+            "tags": [
+            ],
+            "date_published": "2020-08-23T19:35:19-04:00",
+            "date_modified": "2020-08-23T19:35:19-04:00"
+        },
+        {
             "id": "https://benthroop.github.io/setting-up-this-blog-for-editing-on-all-of-my-computers/",
             "url": "https://benthroop.github.io/setting-up-this-blog-for-editing-on-all-of-my-computers/",
             "title": "Setting up this blog for editing on all of my computers.",
@@ -20,8 +34,8 @@
             },
             "tags": [
             ],
-            "date_published": "2020-08-06T00:22:13-04:00",
-            "date_modified": "2020-08-06T00:22:13-04:00"
+            "date_published": "2020-07-30T07:34:25-04:00",
+            "date_modified": "2020-07-30T07:36:59-04:00"
         },
         {
             "id": "https://benthroop.github.io/and-so-it-begins/",
@@ -35,8 +49,8 @@
             },
             "tags": [
             ],
-            "date_published": "2020-08-06T00:22:13-04:00",
-            "date_modified": "2020-08-06T00:22:13-04:00"
+            "date_published": "2020-07-29T14:17:33-04:00",
+            "date_modified": "2020-07-30T09:25:11-04:00"
         },
         {
             "id": "https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/",
@@ -49,8 +63,8 @@
             },
             "tags": [
             ],
-            "date_published": "2020-08-06T00:22:13-04:00",
-            "date_modified": "2020-08-06T00:22:13-04:00"
+            "date_published": "2017-06-06T09:56:00-04:00",
+            "date_modified": "2020-07-31T18:24:04-04:00"
         },
         {
             "id": "https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/",
@@ -63,8 +77,8 @@
             },
             "tags": [
             ],
-            "date_published": "2020-08-06T00:22:13-04:00",
-            "date_modified": "2020-08-06T00:22:13-04:00"
+            "date_published": "2017-05-31T09:52:00-04:00",
+            "date_modified": "2020-07-31T18:46:51-04:00"
         }
     ]
 }

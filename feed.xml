@@ -3,7 +3,7 @@
     <title>Ben Throop&#x27;s Blog</title>
     <link href="https://benthroop.github.io/feed.xml" rel="self" />
     <link href="https://benthroop.github.io" />
-    <updated>2020-08-23T19:35:19-04:00</updated>
+    <updated>2020-10-19T17:32:46-04:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,14 +17,16 @@
         <link href="https://benthroop.github.io/dont-make-me-work/"/>
         <id>https://benthroop.github.io/dont-make-me-work/</id>
 
-        <updated>2020-08-23T19:35:19-04:00</updated>
+        <updated>2020-10-19T17:32:02-04:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://benthroop.github.io/media/posts/9/IMG_1960.jpg" alt="" />
                     It's interesting to reflect on how my taste in games has changed over the years. Back in my 20's, I was into Counterstrike. Nowadays, kids in their 20's are into Counterstrike. But I've gotten older. My day is a lot of work. I'm solving problems&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <img src="https://benthroop.github.io/media/posts/9/IMG_1960.jpg" alt="" />
                 <p>It's interesting to reflect on how my taste in games has changed over the years. Back in my 20's, I was into Counterstrike. Nowadays, kids in their 20's are into Counterstrike.</p>
 <p>But I've gotten older.</p>
 <p>My day is a lot of work. I'm solving problems all the time, in both business and family. How can I get my daughter to eat broccoli? (answer: once she finishes, she gets a pancake). How can I build a game that is both true to myself as a creator and commercially viable? (answer: TBD). How can my wife and I have an intimate and fulfilling relationship when we are literally never alone? (answer: please email me, haven't got this one figured out).</p>
@@ -67,16 +69,16 @@
         <link href="https://benthroop.github.io/and-so-it-begins/"/>
         <id>https://benthroop.github.io/and-so-it-begins/</id>
 
-        <updated>2020-07-30T09:25:11-04:00</updated>
+        <updated>2020-10-19T17:32:46-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://benthroop.github.io/media/posts/1/jail.jpeg" alt="" />
+                        <img src="https://benthroop.github.io/media/posts/1/IMG_1967.jpg" alt="" />
                     I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that life in 2015, but right after got so deep into making&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://benthroop.github.io/media/posts/1/jail.jpeg" alt="" />
+                    <img src="https://benthroop.github.io/media/posts/1/IMG_1967.jpg" alt="" />
                 <p>I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that life in 2015, but right after got so deep into making <a href="http://headmastergame.com">Headmaster</a> that I didn't dedicate the time. I think there is a saying about planting a tree, and yesterday, and something. It's a very smart saying. You can imagine.</p>
 <p>Anyway, I've started to get busy doing my own stuff again. It's exciting and scary, but I'm determined to not hermit again.</p>
 <p>It's been a few weeks and I've been tinkering on some code... an old little space shooter project that I'm fixing up like a beat up car. I want to talk about it a bit, so here we go. </p>

@@ -317,7 +317,7 @@ ol {
 ul > li,
 ol > li {
   list-style: inherit;
-  padding: 0 0 0.25rem 1rem;
+  padding: 0 0 0.75rem 1rem;
 }
 
 dl dt {
@@ -991,12 +991,6 @@ textarea {
 .main__left > header a:focus {
   outline: 2px dotted var(--color);
 }
-
-#currentPage {
-    font-size: 3em;
-    color: aqua;
-}
-
 .main__right {
   margin-top: 3.75rem;
   padding: 0 4%;

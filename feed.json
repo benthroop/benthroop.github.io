@@ -15,13 +15,14 @@
             "title": "Don&#x27;t Make Me Work",
             "summary": "It's interesting to reflect on how my taste in games has changed over the years. Back in my 20's, I was into Counterstrike. Nowadays, kids in their 20's are into Counterstrike. But I've gotten older. My day is a lot of work. I'm solving problems&hellip;",
             "content_html": "<p>It's interesting to reflect on how my taste in games has changed over the years. Back in my 20's, I was into Counterstrike. Nowadays, kids in their 20's are into Counterstrike.</p>\n<p>But I've gotten older.</p>\n<p>My day is a lot of work. I'm solving problems all the time, in both business and family. How can I get my daughter to eat broccoli? (answer: once she finishes, she gets a pancake). How can I build a game that is both true to myself as a creator and commercially viable? (answer: TBD). How can my wife and I have an intimate and fulfilling relationship when we are literally never alone? (answer: please email me, haven't got this one figured out).</p>\n<p>So yeah, once I sit down to \"play a game\", I've just gotten done playing several games concurrently with varying degrees of success. I don't really want to learn new rules, compete against people who have invested time I'll never have, or, well, in essence, lose. I don't really want to lose. I want to play games that are just fun to play. If they are win or lose games, I want to win. </p>\n<p>That means multiplayer games are generally out because humans like winning and everyone can't win. Sorry LIBTARDS! Man what a terrible word that is! But still, it's true. Everyone cannot win unless the game is designed to not be won at all.</p>\n<p>That said, some games can only be lost, and somehow that is a happy place to be. Maybe part of reaching this point in life is recognizing that many games are a battle to simply survive. So survival games where eventual death is either lurking over the hill or right on top of you, tend to be quite appealing.</p>\n<p>Noita has been my </p>",
+            "image": "https://benthroop.github.io/media/posts/9/IMG_1960.jpg",
             "author": {
                 "name": "Ben"
             },
             "tags": [
             ],
             "date_published": "2020-08-23T19:35:19-04:00",
-            "date_modified": "2020-08-23T19:35:19-04:00"
+            "date_modified": "2020-10-19T17:32:02-04:00"
         },
         {
             "id": "https://benthroop.github.io/setting-up-this-blog-for-editing-on-all-of-my-computers/",
@@ -43,14 +44,14 @@
             "title": "And so it begins.",
             "summary": "I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that life in 2015, but right after got so deep into making&hellip;",
             "content_html": "<p>I've always wanted to be free with sharing what I'm doing, but there's always been a reason why I didn't. NDAs and employment agreements at Sony and Activision make employees invisible. I left that life in 2015, but right after got so deep into making <a href=\"http://headmastergame.com\">Headmaster</a> that I didn't dedicate the time. I think there is a saying about planting a tree, and yesterday, and something. It's a very smart saying. You can imagine.</p>\n<p>Anyway, I've started to get busy doing my own stuff again. It's exciting and scary, but I'm determined to not hermit again.</p>\n<p>It's been a few weeks and I've been tinkering on some code... an old little space shooter project that I'm fixing up like a beat up car. I want to talk about it a bit, so here we go. </p>\n<p>BTW this blog is built with a thing called <a href=\"https://getpublii.com/\">Publii</a>. It's like Wordpress, but the app is on your computer and it generates the site as html/css. It seems cool, so giving it a shot. I gave \"fancy\" static site generators like Jekyll and Hugo a good look, but you have to be a web head to get these things. Ain't got time for that. </p>\n<p>Let's test a GIF:</p>\n<figure class=\"post__image\"><img loading=\"lazy\"  src=\"https://benthroop.github.io/media/posts/1/PARTYMODE-GIF-RobertWheel.gif\" alt=\"\"></figure>\n<p> </p>\n<p>And a Youtube Embed:</p>\n<figure class=\"post__video\"><iframe loading=\"lazy\" width=\"560\" height=\"314\" src=\"https://www.youtube.com/embed/4vKQUiiC7jg\" allowfullscreen=\"allowfullscreen\" data-mce-fragment=\"1\"></iframe></figure>\n<p>Keeping it fast and loose. </p>",
-            "image": "https://benthroop.github.io/media/posts/1/jail.jpeg",
+            "image": "https://benthroop.github.io/media/posts/1/IMG_1967.jpg",
             "author": {
                 "name": "Ben"
             },
             "tags": [
             ],
             "date_published": "2020-07-29T14:17:33-04:00",
-            "date_modified": "2020-07-30T09:25:11-04:00"
+            "date_modified": "2020-10-19T17:32:46-04:00"
         },
         {
             "id": "https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/",

@@ -948,7 +948,7 @@ textarea {
 }
 @media all and (min-width: 112.5em) {
   .main__left {
-    width: 50vw;
+    width: 40vw;
   }
 }
 .main__left > header {
@@ -976,7 +976,7 @@ textarea {
 }
 .main__left > header a {
   color: var(--white);
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: all 0.12s linear 0s;
   -o-transition: all 0.12s linear 0s;
   transition: all 0.12s linear 0s;
@@ -993,7 +993,7 @@ textarea {
 }
 .main__right {
   margin-top: 3.75rem;
-  padding: 0 4%;
+  padding: 0 6%;
 }
 @media all and (min-width: 56.25em) {
   .main__right {
@@ -1006,11 +1006,11 @@ textarea {
 }
 @media all and (min-width: 112.5em) {
   .main__right {
-    width: 50%;
+    
   }
 }
 .main__right > div {
-  max-width: var(--entry-width);
+  max-width: 100%;
 }
 @media all and (min-width: 37.5em) and (max-width: 56.1875em) {
   .main__right > div {

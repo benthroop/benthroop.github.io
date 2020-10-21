@@ -24,6 +24,21 @@
             "date_modified": "2020-10-21T14:17:00-04:00"
         },
         {
+            "id": "https://benthroop.github.io/headmaster-development-tools-talk/",
+            "url": "https://benthroop.github.io/headmaster-development-tools-talk/",
+            "title": "Headmaster Development Tools Talk",
+            "summary": "We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster. ",
+            "content_html": "<p>We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster. </p>\n<div class=\"post__iframe\"><iframe loading=\"lazy\" width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bN4-Gj8LsyI\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"allowfullscreen\"></iframe></div>",
+            "image": "https://benthroop.github.io/media/posts/11/Screenshot-2020-10-21-120441.png",
+            "author": {
+                "name": "Ben"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-11-21T12:05:00-05:00",
+            "date_modified": "2020-10-21T12:05:37-04:00"
+        },
+        {
             "id": "https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/",
             "url": "https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/",
             "title": "Headmaster @ 2017 Champions League Final",

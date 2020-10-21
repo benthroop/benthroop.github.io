@@ -51,6 +51,29 @@
         </content>
     </entry>
     <entry>
+        <title>Headmaster Development Tools Talk</title>
+        <author>
+            <name>Ben</name>
+        </author>
+        <link href="https://benthroop.github.io/headmaster-development-tools-talk/"/>
+        <id>https://benthroop.github.io/headmaster-development-tools-talk/</id>
+
+        <updated>2020-10-21T12:05:37-04:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://benthroop.github.io/media/posts/11/Screenshot-2020-10-21-120441.png" alt="" />
+                    We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster. 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://benthroop.github.io/media/posts/11/Screenshot-2020-10-21-120441.png" alt="" />
+                <p>We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster. </p>
+<div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/bN4-Gj8LsyI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe></div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
         <title>Headmaster @ 2017 Champions League Final</title>
         <author>
             <name>Ben</name>

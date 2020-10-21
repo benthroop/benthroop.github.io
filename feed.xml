@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2020-10-21T14:17:00-04:00</updated>
+    <updated>2020-10-21T17:35:15-04:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,16 +17,16 @@
         <link href="https://emergentbehavior.com/be-static-be-mine/"/>
         <id>https://emergentbehavior.com/be-static-be-mine/</id>
 
-        <updated>2020-10-21T14:17:00-04:00</updated>
+        <updated>2020-10-21T17:35:15-04:00</updated>
             <summary>
                 <![CDATA[
-                    Static Websites Let You Own Your Content.This post is about why we got here and what tools are some links to good tools for building static websites. Static meaning that the site is not generated on the fly by a server, but instead is just&hellip;
+                    Static Websites Let You Own Your Content.This post is about why I built this site the way I did, as a "static website" instead of a more traditional way using Wordpress. Most people won't care about this, but I wanted to write it all down&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                 <h2>Static Websites Let You Own Your Content.</h2>
-<p>This post is about why we got here and what tools are some links to good tools for building static websites. Static meaning that the site is not generated on the fly by a server, but instead is just .html files transmitted via a web server. Really fast, really secure, pretty simple and portable.</p>
+<p>This post is about why I built this site the way I did, as a "static website" instead of a more traditional way using Wordpress. Most people won't care about this, but I wanted to write it all down anyway!</p>
 <hr>
 <p>It's 2020 and besides being the year that everything goes wrong, it's also a good time to reflect on how I communicate online. </p>
 <p>Years ago we all had websites. Usually we were apologizing for them. Site building was somewhat difficult until Blogger and Wordpress arrived, and then the blogging revolution took off. For a few years, this was a pretty good scene. </p>

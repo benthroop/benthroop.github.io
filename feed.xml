@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Emergent Behavior</title>
-    <link href="https://benthroop.github.io/feed.xml" rel="self" />
-    <link href="https://benthroop.github.io" />
+    <link href="https://emergentbehavior.com/feed.xml" rel="self" />
+    <link href="https://emergentbehavior.com" />
     <updated>2020-10-21T14:17:00-04:00</updated>
     <author>
         <name>Ben</name>
     </author>
-    <id>https://benthroop.github.io</id>
+    <id>https://emergentbehavior.com</id>
 
     <entry>
         <title>Be static. Be mine.</title>
         <author>
             <name>Ben</name>
         </author>
-        <link href="https://benthroop.github.io/be-static-be-mine/"/>
-        <id>https://benthroop.github.io/be-static-be-mine/</id>
+        <link href="https://emergentbehavior.com/be-static-be-mine/"/>
+        <id>https://emergentbehavior.com/be-static-be-mine/</id>
 
         <updated>2020-10-21T14:17:00-04:00</updated>
             <summary>
@@ -38,12 +38,12 @@
 <p>For my company site, I chose to just get a website template from <a href="http://html5up.com">html5up.com</a> and edit it. Good old HTML/CSS/JS. Hosting a static site on Github Pages is now free and fast, and one can use Git to iterate on it. This workflow is absolutely great. The only missing bit of server functionality is the contact form, but that's solved by <a href="formspree.com">FormSpree.com</a>, which gives you a snip of HTML to embed and then it takes care of everything. If you've ever dealt with configuring a contact form on a website, you'll know that this is a great service. </p>
 <h2>Enter Publii</h2>
 <p>This site is built with <a href="https://getpublii.com/">Publii</a>, which is essentially Wordpress as a program that is installed on your local computer. Instead of requiring a webserver with MySQL to serve up the content editing platform, it's just a Windows/Mac app that stores the database locally. I've got it set up so that all of the source data is in Github, and the Publii app has a Github Pages publishing feature, so with one click it regenerates the site and uploads it. It uses a template language called <a href="https://handlebarsjs.com/">Handlebars </a>to build the themes, and it's really easy to understand for anyone that's written some code.</p>
-<figure class="post__image post__image--wide" ><img loading="lazy" src="https://benthroop.github.io/media/posts/1/Screenshot-2020-10-21-111119.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://benthroop.github.io/media/posts/1/responsive/Screenshot-2020-10-21-111119-xs.png 300w ,https://benthroop.github.io/media/posts/1/responsive/Screenshot-2020-10-21-111119-sm.png 480w ,https://benthroop.github.io/media/posts/1/responsive/Screenshot-2020-10-21-111119-md.png 768w"  alt="The Publii Editor" width="1806" height="1113">
+<figure class="post__image post__image--wide" ><img loading="lazy" src="https://emergentbehavior.com/media/posts/1/Screenshot-2020-10-21-111119.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/1/responsive/Screenshot-2020-10-21-111119-xs.png 300w ,https://emergentbehavior.com/media/posts/1/responsive/Screenshot-2020-10-21-111119-sm.png 480w ,https://emergentbehavior.com/media/posts/1/responsive/Screenshot-2020-10-21-111119-md.png 768w"  alt="The Publii Editor" width="1806" height="1113">
 <figcaption >The Publii Editor</figcaption>
 </figure>
 <h2>Strategy</h2>
 <p>With all this in place, I am going to use Twitter as a broadcasting tool like it should be. Twitter should not be the place we write long thoughts, if for no other reason that we lose them. Tweets are not a body of work. I want to create a body of work here.</p>
-<p>Comments are an issue, but a comment is often a desire to talk to the post author as opposed to starting a conversation within a community. So I'll make you a deal. If you write me something really interesting via the <a href="https://benthroop.github.io/contact/">Contact Form</a> I'll post it back to this page.</p>
+<p>Comments are an issue, but a comment is often a desire to talk to the post author as opposed to starting a conversation within a community. So I'll make you a deal. If you write me something really interesting via the <a href="https://emergentbehavior.com/contact/">Contact Form</a> I'll post it back to this page.</p>
 <p>:)</p>
 <p> </p>
 <p> </p>
@@ -55,19 +55,19 @@
         <author>
             <name>Ben</name>
         </author>
-        <link href="https://benthroop.github.io/headmaster-development-tools-talk/"/>
-        <id>https://benthroop.github.io/headmaster-development-tools-talk/</id>
+        <link href="https://emergentbehavior.com/headmaster-development-tools-talk/"/>
+        <id>https://emergentbehavior.com/headmaster-development-tools-talk/</id>
 
         <updated>2020-10-21T12:05:37-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://benthroop.github.io/media/posts/11/Screenshot-2020-10-21-120441.png" alt="" />
+                        <img src="https://emergentbehavior.com/media/posts/11/Screenshot-2020-10-21-120441.png" alt="" />
                     We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster. 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://benthroop.github.io/media/posts/11/Screenshot-2020-10-21-120441.png" alt="" />
+                    <img src="https://emergentbehavior.com/media/posts/11/Screenshot-2020-10-21-120441.png" alt="" />
                 <p>We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster. </p>
 <div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/bN4-Gj8LsyI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe></div>
             ]]>
@@ -78,8 +78,8 @@
         <author>
             <name>Ben</name>
         </author>
-        <link href="https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/"/>
-        <id>https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/</id>
+        <link href="https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/"/>
+        <id>https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/</id>
 
         <updated>2020-10-21T10:20:00-04:00</updated>
             <summary>
@@ -206,8 +206,8 @@
         <author>
             <name>Ben</name>
         </author>
-        <link href="https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/"/>
-        <id>https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/</id>
+        <link href="https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/"/>
+        <id>https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/</id>
 
         <updated>2020-10-21T10:21:54-04:00</updated>
             <summary>
@@ -257,8 +257,8 @@
         <author>
             <name>Ben</name>
         </author>
-        <link href="https://benthroop.github.io/responding-to-john-walker-of-rock-paper-shotgun/"/>
-        <id>https://benthroop.github.io/responding-to-john-walker-of-rock-paper-shotgun/</id>
+        <link href="https://emergentbehavior.com/responding-to-john-walker-of-rock-paper-shotgun/"/>
+        <id>https://emergentbehavior.com/responding-to-john-walker-of-rock-paper-shotgun/</id>
 
         <updated>2020-10-21T10:24:05-04:00</updated>
             <summary>

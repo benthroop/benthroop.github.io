@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://benthroop.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://emergentbehavior.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://benthroop.github.io/</loc>
+<loc>https://emergentbehavior.com/</loc>
 </url>
 <url>
-<loc>https://benthroop.github.io/about/</loc>
+<loc>https://emergentbehavior.com/about/</loc>
 <lastmod>2020-10-20T14:42:16-04:00</lastmod>
 <image:image>
-<image:loc>https://benthroop.github.io/media\posts\3/Cardiff_Portrait_Ben.jpg</image:loc>
+<image:loc>https://emergentbehavior.com/media\posts\3/Cardiff_Portrait_Ben.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://benthroop.github.io/be-static-be-mine/</loc>
+<loc>https://emergentbehavior.com/be-static-be-mine/</loc>
 <lastmod>2020-10-21T11:48:00-04:00</lastmod>
 <image:image>
-<image:loc>https://benthroop.github.io/media\posts\1/Screenshot-2020-10-21-111119.png</image:loc>
+<image:loc>https://emergentbehavior.com/media\posts\1/Screenshot-2020-10-21-111119.png</image:loc>
 <image:title><![CDATA[The Publii Editor]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://benthroop.github.io/contact/</loc>
+<loc>https://emergentbehavior.com/contact/</loc>
 <lastmod>2020-10-20T15:22:43-04:00</lastmod>
 </url>
 <url>
-<loc>https://benthroop.github.io/headmaster-development-tools-talk/</loc>
+<loc>https://emergentbehavior.com/headmaster-development-tools-talk/</loc>
 <lastmod>2020-10-21T12:05:37-04:00</lastmod>
 <image:image>
-<image:loc>https://benthroop.github.io/media\posts\11/Screenshot-2020-10-21-120441.png</image:loc>
+<image:loc>https://emergentbehavior.com/media\posts\11/Screenshot-2020-10-21-120441.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/</loc>
+<loc>https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/</loc>
 <lastmod>2020-10-21T10:21:54-04:00</lastmod>
 </url>
 <url>
-<loc>https://benthroop.github.io/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/</loc>
+<loc>https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/</loc>
 <lastmod>2020-10-21T10:20:00-04:00</lastmod>
 </url>
 <url>
-<loc>https://benthroop.github.io/responding-to-john-walker-of-rock-paper-shotgun/</loc>
+<loc>https://emergentbehavior.com/responding-to-john-walker-of-rock-paper-shotgun/</loc>
 <lastmod>2020-10-21T10:24:05-04:00</lastmod>
 </url>
 </urlset>

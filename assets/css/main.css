@@ -312,11 +312,10 @@ blockquote > :nth-child(1) {
 
 ul,
 ol {
-  margin-left: 2rem;
+  margin-left: .5em;
 }
 ul > li,
 ol > li {
-  list-style: inherit;
   padding: 0 0 0.75rem 1rem;
 }
 

@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2020-12-28T12:06:12-05:00</updated>
+    <updated>2020-12-28T12:09:35-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://emergentbehavior.com/migs-2017-talk-blowing-things-up-in-unity/"/>
         <id>https://emergentbehavior.com/migs-2017-talk-blowing-things-up-in-unity/</id>
 
-        <updated>2020-12-28T12:06:12-05:00</updated>
+        <updated>2020-12-28T12:09:35-05:00</updated>
             <summary>
                 <![CDATA[
                     I was invited to speak at MIGS in Montreal in 2017 and gave a talk there. It was a bit of a surprise that they weren't recording the talks, but I was able to cobble together a recording of it anyway. I went up to&hellip;
@@ -28,7 +28,7 @@
                 <p>I was invited to speak at MIGS in Montreal in 2017 and gave a talk there. It was a bit of a surprise that they weren't recording the talks, but I was able to cobble together a recording of it anyway.</p>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/C-PfvXET8UU" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p>I went up to Montreal a few days early and got an AirBnB to prep the talk from. I actually liked this approach because I could really concentrate, but it was a bit stressful crunching it together at the last minute.</p>
-<p>I mention in the talk that I would post this code to Github, but never got around to doing that. If you are interested hit me up on the contact form and I'll send it to you.</p>
+<p>I mention in the talk that I would post this code to Github, but never got around to doing that. If you are interested hit me up on the <a href="https://emergentbehavior.com/contact/">contact form</a> and I'll send it to you.</p>
             ]]>
         </content>
     </entry>

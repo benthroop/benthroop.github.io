@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2021-03-05T17:44:30-05:00</updated>
+    <updated>2021-03-05T18:12:40-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://emergentbehavior.com/brackeys-game-jam-20211/"/>
         <id>https://emergentbehavior.com/brackeys-game-jam-20211/</id>
 
-        <updated>2021-03-05T17:44:30-05:00</updated>
+        <updated>2021-03-05T18:12:40-05:00</updated>
             <summary>
                 <![CDATA[
                     I'll write something bigger later. But for now we need a place to host our build. Here: 
@@ -28,7 +28,7 @@
                 <p>I'll write something bigger later. But for now we need a place to host our build. Here:</p>
 <p> </p>
 <p> </p>
-<div class="post__iframe"><iframe loading="lazy" width="1000" height="680" style="border: 0px #000000 none;" src="https://frameinteractive.com/bfm/index.html" name="Bowling For Monsters" scrolling="no" frameborder="1" marginheight="px"></iframe></div>
+<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://frameinteractive.com/bfm/index.html" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></figure>
             ]]>
         </content>
     </entry>

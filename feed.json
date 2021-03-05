@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://emergentbehavior.com/brackeys-game-jam-20211/",
+            "url": "https://emergentbehavior.com/brackeys-game-jam-20211/",
+            "title": "Brackeys Game Jam 2021.1",
+            "summary": "I'll write something bigger later. But for now we need a place to host our build. Here: ",
+            "content_html": "<p>I'll write something bigger later. But for now we need a place to host our build. Here:</p>\n<p> </p>\n<p> </p>\n<div class=\"post__iframe\"><iframe loading=\"lazy\" width=\"1000\" height=\"680\" style=\"border: 0px #000000 none;\" src=\"https://frameinteractive.com/bfm/index.html\" name=\"Bowling For Monsters\" scrolling=\"no\" frameborder=\"1\" marginheight=\"px\"></iframe></div>",
+            "author": {
+                "name": "Ben"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-03-05T17:44:30-05:00",
+            "date_modified": "2021-03-05T17:44:30-05:00"
+        },
+        {
             "id": "https://emergentbehavior.com/migs-2017-talk-blowing-things-up-in-unity/",
             "url": "https://emergentbehavior.com/migs-2017-talk-blowing-things-up-in-unity/",
             "title": "MIGS 2017 Talk - Blowing Things up in Unity",

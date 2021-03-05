@@ -3,12 +3,35 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2020-12-28T12:09:35-05:00</updated>
+    <updated>2021-03-05T17:44:30-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
     <id>https://emergentbehavior.com</id>
 
+    <entry>
+        <title>Brackeys Game Jam 2021.1</title>
+        <author>
+            <name>Ben</name>
+        </author>
+        <link href="https://emergentbehavior.com/brackeys-game-jam-20211/"/>
+        <id>https://emergentbehavior.com/brackeys-game-jam-20211/</id>
+
+        <updated>2021-03-05T17:44:30-05:00</updated>
+            <summary>
+                <![CDATA[
+                    I'll write something bigger later. But for now we need a place to host our build. Here: 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>I'll write something bigger later. But for now we need a place to host our build. Here:</p>
+<p> </p>
+<p> </p>
+<div class="post__iframe"><iframe loading="lazy" width="1000" height="680" style="border: 0px #000000 none;" src="https://frameinteractive.com/bfm/index.html" name="Bowling For Monsters" scrolling="no" frameborder="1" marginheight="px"></iframe></div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>MIGS 2017 Talk - Blowing Things up in Unity</title>
         <author>

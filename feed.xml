@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2021-03-27T17:42:26-04:00</updated>
+    <updated>2021-03-27T17:58:23-04:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://emergentbehavior.com/brackeys-game-jam-20211/"/>
         <id>https://emergentbehavior.com/brackeys-game-jam-20211/</id>
 
-        <updated>2021-03-27T17:42:26-04:00</updated>
+        <updated>2021-03-27T17:58:23-04:00</updated>
             <summary>
                 <![CDATA[
                     My 11 year old son, his friend and I made a game for the Brackeys Game Jam in February 2021, during the pandemic. If you want to skip right to the game, here you go: Click here to play Bowling for Monsters in your browser&hellip;
@@ -27,12 +27,16 @@
             <![CDATA[
                 <p>My 11 year old son, his friend and I made a game for the Brackeys Game Jam in February 2021, during the pandemic. If you want to skip right to the game, here you go:</p>
 <p><a href="https://captainexpo.itch.io/bowling-for-monsters">Click here to play Bowling for Monsters in your browser on Itch.io</a></p>
-<p>Here's our team photo, taken along the shore of Lake Champlain.</p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/13/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3.JPG" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-xs.JPG 300w ,https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-sm.JPG 480w ,https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-md.JPG 768w"  alt="" width="1200" height="900"></figure>
+<figure class="post__image" ><img loading="lazy" src="https://emergentbehavior.com/media/posts/13/Screenshot-2021-02-28-222725.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-02-28-222725-xs.png 300w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-02-28-222725-sm.png 480w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-02-28-222725-md.png 768w"  alt="Dr. Sletzer is the first monster you meet." width="1358" height="762">
+<figcaption >Dr Sletzer is the first monster you meet.</figcaption>
+</figure>
 <!--<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://frameinteractive.com/bfm/index.html" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></figure>-->
 <h2>Or... How to make a game with two 11 year olds</h2>
 <p>I've done a number of game jams, both solo and with teams of adults, but I've never done one with two 6th graders. This was different because the most important thing to me was that they had a positive experience. However I also know that most jams, especially for first timers, are disasters! So managing expectations was key.</p>
 <p>The first thing I did was ask them what they wanted to get out of it. My son, Elliot, said his priority was to finish and to make something that did well in the jam rankings. His friend Kaung just wanted to have fun. So I took that as my challenge, to execute on their goals and make this feel like their game.</p>
+<figure class="post__image" ><img loading="lazy" src="https://emergentbehavior.com/media/posts/13/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3.JPG" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-xs.JPG 300w ,https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-sm.JPG 480w ,https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-md.JPG 768w"  alt="" width="1200" height="900">
+<figcaption >Here's our team photo, taken along the shore of Lake Champlain.</figcaption>
+</figure>
 <p>Next we figured out roles and responsibilities. Kaung has a way with words and is always making us laugh on Discord, so we wanted the game to have writing to support his skill. Luckily he is also quite technical and has run his own modded Minecraft server, coded in Visual Studio, and installed a number of ridiculous Discord Bots.</p>
 <p>Elliot can do quite a bit in game development already including programming, art, sound, music, and design. He'd published two Itch games on his own before this, <a href="https://captainexpo.itch.io/acorn-hunt">Acorn Hunt</a> and <a href="#INTERNAL_LINK#/post/null" title="https://captainexpo.itch.io/seat-labor">Seat Labor.</a> He's an aspiring game maker just like his dad. Yes I am still aspiring too.</p>
 <p>So Elliot opted to focus on the art and music. That left me to do the programming and the organization. We made a little chart in Miro.com, which we used for our brainstorming. </p>
@@ -78,8 +82,6 @@
 <p>Most importantly, we hit on the boys goals of A) Finishing and B) Having Fun.</p>
 <p><a href="https://captainexpo.itch.io/bowling-for-monsters">Click here to play Bowling for Monsters in your browser on Itch.io</a><a href="https://captainexpo.itch.io/bowling-for-monsters"></a><a href="https://captainexpo.itch.io/bowling-for-monsters"></a></p>
 <p> </p>
-<p> </p>
-<iframe loading="lazy" mozallowfullscreen="mozallowfullscreen" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" src="https://frameinteractive.com/bfm/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" id="game_drop" allowtransparency="true" frameborder="0"></iframe>
             ]]>
         </content>
     </entry>

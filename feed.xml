@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2021-06-04T12:34:10-04:00</updated>
+    <updated>2021-06-04T12:46:07-04:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,17 +17,17 @@
         <link href="https://emergentbehavior.com/learning-compute-shaders/"/>
         <id>https://emergentbehavior.com/learning-compute-shaders/</id>
 
-        <updated>2021-06-04T12:34:10-04:00</updated>
+        <updated>2021-06-04T12:46:07-04:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://emergentbehavior.com/media/posts/14/Boids3D-1.gif" alt="" />
+                        <img src="https://emergentbehavior.com/media/posts/14/891821-kpaboczfow-1535370549.jpeg" alt="" />
                     A few months ago a tweet caught my eye. A guy named @arsiliath was offering a course described as an "advanced workshop [that] introduces compute shaders via a series of video tutorials related to biological &amp; physical simulation." I got on the waiting list for&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://emergentbehavior.com/media/posts/14/Boids3D-1.gif" alt="" />
-                <figure class="post__image"><img loading="lazy"  src="https://s01.sgp1.digitaloceanspaces.com/large/891821-kpaboczfow-1535370549.jpeg" data-is-external-image="true"  alt="He man has the power" width="1200" height="630"></figure>
+                    <img src="https://emergentbehavior.com/media/posts/14/891821-kpaboczfow-1535370549.jpeg" alt="" />
+                <figure class="post__image post__image--center"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/14/Boids3D-1-2.gif" alt="" width="250" height="252"></figure>
 <p>A few months ago a tweet caught my eye. A guy named <a href="https://twitter.com/arsiliath?lang=en">@arsiliath</a> was offering a course described as an "<a href="https://paprika.studio/workshops/compute/">advanced workshop [that] introduces compute shaders via a series of video tutorials related to biological &amp; physical simulation.</a>" I got on the waiting list for the next session, and got in for the April 2021 workshop. </p>
 <p>This workshop was Unity based, we learned to use the GPU for computation and graphics. On top of that, it's focused on emergent behavior and artificial life algorithms, which I love. The workload was very part time, but sometimes I'd put a full day in to catch up or get through a tricky bit. The class was asynchronous and we connected on Discord where several past and present students were around to talk through problems. </p>
 <p>Here is a collection of videos that I produced throughout the course. </p>

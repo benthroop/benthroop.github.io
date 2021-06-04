@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2021-06-04T12:46:07-04:00</updated>
+    <updated>2021-06-04T13:08:21-04:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://emergentbehavior.com/learning-compute-shaders/"/>
         <id>https://emergentbehavior.com/learning-compute-shaders/</id>
 
-        <updated>2021-06-04T12:46:07-04:00</updated>
+        <updated>2021-06-04T13:08:21-04:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://emergentbehavior.com/media/posts/14/891821-kpaboczfow-1535370549.jpeg" alt="" />
@@ -27,9 +27,9 @@
         <content type="html">
             <![CDATA[
                     <img src="https://emergentbehavior.com/media/posts/14/891821-kpaboczfow-1535370549.jpeg" alt="" />
-                <figure class="post__image post__image--center"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/14/Boids3D-1-2.gif" alt="" width="250" height="252"></figure>
+                <figure class="post__image post__image--wide"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/14/ezgif.com-gif-maker.gif" alt="" width="770" height="182"></figure>
 <p>A few months ago a tweet caught my eye. A guy named <a href="https://twitter.com/arsiliath?lang=en">@arsiliath</a> was offering a course described as an "<a href="https://paprika.studio/workshops/compute/">advanced workshop [that] introduces compute shaders via a series of video tutorials related to biological &amp; physical simulation.</a>" I got on the waiting list for the next session, and got in for the April 2021 workshop. </p>
-<p>This workshop was Unity based, we learned to use the GPU for computation and graphics. On top of that, it's focused on emergent behavior and artificial life algorithms, which I love. The workload was very part time, but sometimes I'd put a full day in to catch up or get through a tricky bit. The class was asynchronous and we connected on Discord where several past and present students were around to talk through problems. </p>
+<p>This workshop is Unity based and we learned to use the GPU for computation and graphics. What really got me excited is that it's focused on emergent behavior and artificial life algorithms. The workload was estimated at 7 hours a week, but sometimes I'd slack for days and then put a full day in to catch up or get through a tricky bit. The class was asynchronous with assignments handed out on Mondays. We then worked on our own and connected on Discord where several past and present students were around to talk through problems. I loved it.</p>
 <p>Here is a collection of videos that I produced throughout the course. </p>
 <p>The first bit was on an algorithm called CCA, or <a href="https://en.wikipedia.org/wiki/Cyclic_cellular_automaton">Cyclic Cellular Automata</a>. </p>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/wWh-WrAOFW8" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>

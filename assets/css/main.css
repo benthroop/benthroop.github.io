@@ -952,7 +952,7 @@ textarea {
 }
 .main__left > header {
   color: var(--hero-text-color);
-  padding: calc(var(--navbar-height) + 3.75rem) 4% 4.5rem;
+  padding: 3% /*calc(var(--navbar-height) + 3.75rem) 4% 4.5rem; removed this calc to make header stay on top when in mobile width BIT */
   position: relative;
   z-index: 2;
 }

@@ -991,7 +991,8 @@ textarea {
   outline: 2px dotted var(--color);
 }
 .main__right {
-  margin-top: 3.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1.0rem;
   padding: 0 6%;
 }
 @media all and (min-width: 56.25em) {
@@ -999,7 +1000,7 @@ textarea {
     clear: right;
     float: right;
     height: 100%;
-    margin-top: calc(var(--navbar-height) + 3.75rem);
+    margin-top: calc(var(--navbar-height) + .2rem);
     width: 60%;
   }
 }

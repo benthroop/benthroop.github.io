@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2021-06-07T10:43:44-04:00</updated>
+    <updated>2021-06-07T11:20:49-04:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://emergentbehavior.com/i-have-the-power-of-compute-shaders/"/>
         <id>https://emergentbehavior.com/i-have-the-power-of-compute-shaders/</id>
 
-        <updated>2021-06-07T10:43:44-04:00</updated>
+        <updated>2021-06-07T11:20:49-04:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://emergentbehavior.com/media/posts/14/GameOfLife-01-2.gif" alt="" />
@@ -44,9 +44,6 @@
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/R0ZlxL_eIWs" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
 <p>Once the course was over, I went back to see if I could implement <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a> on my own, and it went pretty smoothly.</p>
 <figure class="post__image post__image--wide"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/14/GameOfLife-01.gif" alt="" width="580" height="607"></figure>
-<p> </p>
-<p> </p>
-<p> </p>
             ]]>
         </content>
     </entry>

@@ -674,10 +674,10 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 4%;
-    position: absolute;
+    padding: 0 3% 0 3%;
+      background-color: black;
     top: 0;
-    width: 92%;
+    width: 100%;
     z-index: 3;
   }
 }
@@ -690,7 +690,7 @@ textarea {
   display: flex;
   height: var(--navbar-height);
   overflow: hidden;
-  width: 32%;
+  width: 68%;
   z-index: 2;
 }
 @media all and (min-width: 56.25em) {
@@ -708,7 +708,7 @@ textarea {
 .top__item--right {
   border-color: var(--light) !important;
   position: absolute;
-  right: 0;
+  right: 2%;
   width: 52%;
 }
 @media all and (min-width: 112.5em) {

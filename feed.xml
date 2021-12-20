@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2021-06-11T06:53:33-04:00</updated>
+    <updated>2021-12-20T10:30:11-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://emergentbehavior.com/i-have-the-power-of-compute-shaders/"/>
         <id>https://emergentbehavior.com/i-have-the-power-of-compute-shaders/</id>
 
-        <updated>2021-06-11T06:53:33-04:00</updated>
+        <updated>2021-12-20T10:30:11-05:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://emergentbehavior.com/media/posts/14/GameOfLife-01-2.gif" alt="" />
@@ -28,7 +28,8 @@
             <![CDATA[
                     <img src="https://emergentbehavior.com/media/posts/14/GameOfLife-01-2.gif" alt="" />
                 <figure class="post__image post__image--wide"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/14/ezgif.com-gif-maker.gif" alt="" width="770" height="182"></figure>
-<p>A few months ago a tweet caught my eye. A guy named <a href="https://twitter.com/arsiliath?lang=en">@arsiliath</a> was offering a course described as an "<a href="https://paprika.studio/workshops/compute/">advanced workshop [that] introduces compute shaders via a series of video tutorials related to biological &amp; physical simulation.</a>" I got on the waiting list for the next session, and got in for the April 2021 workshop. </p>
+<p>A few months ago a tweet caught my eye. A guy named <a href="https://twitter.com/arsiliath?lang=en">@arsiliath</a> was offering a course described as an "<a href="https://arsiliath.gumroad.com/l/compute-shaders">advanced workshop [that] introduces compute shaders via a series of video tutorials related to biological &amp; physical simulation.</a>" I got on the waiting list for the next session, and got in for the April 2021 workshop. </p>
+<p><em>(Update Dec 2021: Arsiliath no longer offers this as a live class, but has moved all the materials into a package on Gumroad you can do at your own pace. I've updated the link above to point there.)</em></p>
 <p>It was challenging but the people, content, and coursework were quality. Below is a collection of videos that I produced throughout the course. </p>
 <p>The first bit was on an algorithm called CCA, or <a href="https://en.wikipedia.org/wiki/Cyclic_cellular_automaton">Cyclic Cellular Automata</a>. </p>
 <figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/wWh-WrAOFW8" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>

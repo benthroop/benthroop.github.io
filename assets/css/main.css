@@ -1386,7 +1386,7 @@ textarea {
 }
 @media all and (min-width: 112.5em) {
   .footer {
-    margin-left: 54%;
+    margin-left: 50; /* I dunno, this fixes it - BIT */
   }
 }
 .footer__copyright {

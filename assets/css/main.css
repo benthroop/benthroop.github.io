@@ -1011,6 +1011,7 @@ textarea {
 }
 .main__right > div {
   max-width: 100%;
+  padding-top: 3.2rem;
 }
 @media all and (min-width: 37.5em) and (max-width: 56.1875em) {
   .main__right > div {

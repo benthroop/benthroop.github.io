@@ -351,7 +351,6 @@ pre code {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  display: block;
   max-width: 100%;
   overflow-x: auto;
   vertical-align: top;

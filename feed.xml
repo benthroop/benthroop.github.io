@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2022-11-07T12:00:07-05:00</updated>
+    <updated>2022-11-07T12:30:45-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://emergentbehavior.com/gpu-animation-in-unity/"/>
         <id>https://emergentbehavior.com/gpu-animation-in-unity/</id>
 
-        <updated>2022-11-07T12:00:07-05:00</updated>
+        <updated>2022-11-07T12:30:45-05:00</updated>
             <summary>
                 <![CDATA[
                      TL;DR: On Github, I posted a GPU Animation package that you can get HERE. When you want to draw a LOT of characters at once, using Skinned Meshes in Unity quickly hits a performance wall. You could probably get away with 100, but 1000&hellip;
@@ -60,7 +60,7 @@
 </tr>
 </tbody>
 </table>
-<figure class="post__image post__image--center"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/GPUPerf-Opt.gif" alt="" width="600" height="457"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/GPUPerf-Opt.gif" alt="" width="600" height="457"></figure>
 <p>Let me know if you use it and how it goes.</p>
 <h4><a href="https://github.com/benthroop/GPUAnimator">Link to GPUAnimator Github project.</a></h4>
 <p> </p>

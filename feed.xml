@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2022-11-07T11:48:06-05:00</updated>
+    <updated>2022-11-07T12:00:07-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://emergentbehavior.com/gpu-animation-in-unity/"/>
         <id>https://emergentbehavior.com/gpu-animation-in-unity/</id>
 
-        <updated>2022-11-07T11:48:06-05:00</updated>
+        <updated>2022-11-07T12:00:07-05:00</updated>
             <summary>
                 <![CDATA[
                      TL;DR: On Github, I posted a GPU Animation package that you can get HERE. When you want to draw a LOT of characters at once, using Skinned Meshes in Unity quickly hits a performance wall. You could probably get away with 100, but 1000&hellip;
@@ -37,7 +37,30 @@
 <p>Then the other day I found an open source (MIT) package on Github called <a href="https://github.com/codewriter-packages/Mesh-Animation">Mesh Animation.</a> It is a complete package but still minimal and elegantly written by <a href="https://github.com/vanifatovvlad">VladV</a>. I love the pipeline. You make a single asset which holds everything - references to animations, materials, and textures. This asset provides the baking interface and even has cool validation functionality courtesy of (the required) <a href="https://github.com/codewriter-packages/Tri-Inspector">Tri Inspector, also by VladV</a>.</p>
 <figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/MeshAnimatorBakeUI.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-xs.png 300w ,https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-sm.png 480w ,https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-md.png 768w"  alt="Mesh Animation Bake UI" width="591" height="840"></figure>
 <p>While it was a great foundation, I found that when I went to use it, it wasn't set up the way I'd like. Luckily it is minimal so making changes wasn't that intimidating. I ended up forking the project and pushing my changes up to Github. My version is called <a href="https://github.com/benthroop/GPUAnimator">GPUAnimator</a>. More details are on the Github page.</p>
-<p><video loading="lazy" width="100%" height="auto" controls="controls"><source src="https://emergentbehavior.com/media/posts/20/GPUPerf.mp4" type="video/mp4" /></video></p>
+<p>Below you can see the improvement between GPU and regular skinned meshes. </p>
+<table style="border-collapse: collapse; width: 100%; height: 100px;" border="1">
+<tbody>
+<tr style="height: 50px;">
+<td style="width: 16.6667%;">Method</td>
+<td style="width: 16.6667%; height: 50px;">Batches</td>
+<td style="width: 33.3333%; height: 50px;">FPS</td>
+<td style="width: 33.3333%; height: 50px;">ms</td>
+</tr>
+<tr>
+<td style="width: 16.6667%;">Skinned</td>
+<td style="width: 16.6667%;">847</td>
+<td style="width: 33.3333%;">90</td>
+<td style="width: 33.3333%;">11.0</td>
+</tr>
+<tr style="height: 50px;">
+<td style="width: 16.6667%;">GPU</td>
+<td style="width: 16.6667%; height: 50px;">18</td>
+<td style="width: 33.3333%; height: 50px;">260</td>
+<td style="width: 33.3333%; height: 50px;">4.0</td>
+</tr>
+</tbody>
+</table>
+<figure class="post__image post__image--center"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/GPUPerf-Opt.gif" alt="" width="600" height="457"></figure>
 <p>Let me know if you use it and how it goes.</p>
 <h4><a href="https://github.com/benthroop/GPUAnimator">Link to GPUAnimator Github project.</a></h4>
 <p> </p>

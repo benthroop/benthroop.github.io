@@ -66,7 +66,7 @@
 </url>
 <url>
 <loc>https://emergentbehavior.com/gpu-animation-in-unity/</loc>
-<lastmod>2022-11-07T11:48:06-05:00</lastmod>
+<lastmod>2022-11-07T12:00:07-05:00</lastmod>
 <image:image>
 <image:loc>https://emergentbehavior.com/media\posts\20/RunSheep.gif</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -78,6 +78,10 @@
 <image:image>
 <image:loc>https://emergentbehavior.com/media\posts\20/MeshAnimatorBakeUI.png</image:loc>
 <image:title><![CDATA[Mesh Animation Bake UI]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://emergentbehavior.com/media\posts\20/GPUPerf-Opt.gif</image:loc>
+<image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>

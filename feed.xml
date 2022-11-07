@@ -3,12 +3,45 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2022-01-13T16:10:27-05:00</updated>
+    <updated>2022-11-06T23:31:53-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
     <id>https://emergentbehavior.com</id>
 
+    <entry>
+        <title>Elegant GPU Animation in Unity</title>
+        <author>
+            <name>Ben</name>
+        </author>
+        <link href="https://emergentbehavior.com/gpu-animation-in-unity/"/>
+        <id>https://emergentbehavior.com/gpu-animation-in-unity/</id>
+
+        <updated>2022-11-06T23:31:53-05:00</updated>
+            <summary>
+                <![CDATA[
+                     TL;DR: On Github, I posted a GPU Animation package that you can get HERE. When you want to draw a LOT of characters at once, using Skinned Meshes in Unity quickly hits a performance wall. You could probably get away with 100, but 1000&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/RunSheep.gif" alt="" width="706" height="391"></figure>
+<p>TL;DR: On Github, I posted a GPU Animation package that you can get <a href="https://github.com/benthroop/GPUAnimator">HERE</a>.</p>
+<h3>GPU Animation For Many Characters</h3>
+<p>When you want to draw a LOT of characters at once, using Skinned Meshes in Unity quickly hits a performance wall. You could probably get away with 100, but 1000 will be death. There is a solution though. Instead of using bones, you can use a shader to animate the vertices. Each vertex gets associated with a pixel on a texture which was sampled from the original animations. </p>
+<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/AnimatedTex.apng" alt="" width="762" height="264"></figure>
+<p>So each row represents all the vertices on the model. And then along the Y axis we've got time, broken up in to a section for each animation. Just sample the correct pixel's RGB, treat that as XYZ and you can put the vertex in the right place in a vertex shader.</p>
+<p>The problem is that there is no built in way to do this in Unity. </p>
+<p>For a while, I've been trying to get by with an Asset Store package called <a href="https://assetstore.unity.com/packages/tools/animation/mesh-animator-animate-massive-crowds-26009">Mesh Animator</a>. This tool was first released in 2014 as a CPU based mesh animation tool. Somewhere along the way the author added in a GPU solution and it's quite well done. Unfortunately, the project has accumulated a few tough bugs. The author is kind and responds via email, but ultimately it's just too unwieldy for me to be comfortable moving ahead with.</p>
+<h2>Saved by Open Source</h2>
+<p>Then the other day I found an open source package on Github called <a href="https://github.com/codewriter-packages/Mesh-Animation">Mesh Animation.</a> It is a complete package but still minimal and elegantly written by <a href="https://github.com/vanifatovvlad">VladV</a>. I love the pipeline. You make a single asset which holds everything - references to animations, materials, and textures. This asset provides the baking interface and even has cool validation functionality courtesy of (the required) <a href="https://github.com/codewriter-packages/Tri-Inspector">Tri Inspector, also by VladV</a>.</p>
+<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/MeshAnimatorBakeUI.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-xs.png 300w ,https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-sm.png 480w ,https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-md.png 768w"  alt="Mesh Animation Bake UI" width="591" height="840"></figure>
+<p>While it was a great foundation, I found that when I went to use it, it wasn't quite set up the way I'd like. Luckily it is minimal so making changes wasn't that intimidating. I ended up forking the project and pushing my changes up to Github. My version is called <a href="https://github.com/benthroop/GPUAnimator">GPUAnimator</a>. Let me know if you use it and how it goes.</p>
+<h4><a href="https://github.com/benthroop/GPUAnimator">Link to GPUAnimator Github project.</a></h4>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Compute Shaders and Emergent Algorithms</title>
         <author>

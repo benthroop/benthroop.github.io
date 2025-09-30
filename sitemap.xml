@@ -6,9 +6,9 @@
 </url>
 <url>
 <loc>https://emergentbehavior.com/about/</loc>
-<lastmod>2022-11-09T12:31:02-05:00</lastmod>
+<lastmod>2022-01-13T16:04:05-05:00</lastmod>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\3/Cardiff_Portrait_Ben.jpg</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/3/Cardiff_Portrait_Ben.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
@@ -16,7 +16,7 @@
 <loc>https://emergentbehavior.com/be-static-be-mine/</loc>
 <lastmod>2020-12-28T11:56:32-05:00</lastmod>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\1/Screenshot-2020-10-21-111119.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/1/Screenshot-2020-10-21-111119.png</image:loc>
 <image:title><![CDATA[The Publii Editor]]></image:title>
 </image:image>
 </url>
@@ -24,39 +24,39 @@
 <loc>https://emergentbehavior.com/brackeys-game-jam-20211/</loc>
 <lastmod>2021-06-11T06:53:28-04:00</lastmod>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/BFM_Screen.jpg</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/BFM_Screen.jpg</image:loc>
 <image:title><![CDATA[Dr. Sletzer is the first monster you meet.]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3.JPG</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3.JPG</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/Screenshot-2021-03-13-143822.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-13-143822.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/Screenshot-2021-03-13-144118.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-13-144118.png</image:loc>
 <image:title><![CDATA[Schedule]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/Screenshot-2021-03-13-153356.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-13-153356.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/Screenshot-2021-03-20-110302.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-20-110302.png</image:loc>
 <image:title><![CDATA[Yarn Editor]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/Screenshot-2021-03-20-110750.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-20-110750.png</image:loc>
 <image:title><![CDATA[Yarn Importer in Unity]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/Screenshot-2021-03-20-111919.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-20-111919.png</image:loc>
 <image:title><![CDATA[Bowling as Rendertexture]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\13/Screenshot-2021-03-20-120617.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-20-120617.png</image:loc>
 <image:title><![CDATA[Itch Submission Page]]></image:title>
 </image:image>
 </url>
@@ -66,29 +66,25 @@
 </url>
 <url>
 <loc>https://emergentbehavior.com/gpu-animation-in-unity/</loc>
-<lastmod>2022-11-07T12:30:45-05:00</lastmod>
+<lastmod>2022-11-06T23:31:53-05:00</lastmod>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\20/RunSheep.gif</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/20/RunSheep.gif</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\20/AnimatedTex.apng</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/20/AnimatedTex.apng</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\20/MeshAnimatorBakeUI.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/20/MeshAnimatorBakeUI.png</image:loc>
 <image:title><![CDATA[Mesh Animation Bake UI]]></image:title>
-</image:image>
-<image:image>
-<image:loc>https://emergentbehavior.com/media\posts\20/GPUPerf-Opt.gif</image:loc>
-<image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
 <loc>https://emergentbehavior.com/headmaster-development-tools-talk/</loc>
 <lastmod>2020-10-22T00:34:06-04:00</lastmod>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\11/Screenshot-2020-10-21-120441.png</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/11/Screenshot-2020-10-21-120441.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
@@ -104,11 +100,11 @@
 <loc>https://emergentbehavior.com/i-have-the-power-of-compute-shaders/</loc>
 <lastmod>2022-01-13T16:10:27-05:00</lastmod>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\14/GameOfLife-01-2.gif</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/14/GameOfLife-01-2.gif</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://emergentbehavior.com/media\posts\14/ezgif.com-gif-maker.gif</image:loc>
+<image:loc>https://emergentbehavior.com/media/posts/14/ezgif.com-gif-maker.gif</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>

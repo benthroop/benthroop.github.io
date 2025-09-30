@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2022-11-07T12:30:45-05:00</updated>
+    <updated>2022-11-06T23:31:53-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -17,10 +17,10 @@
         <link href="https://emergentbehavior.com/gpu-animation-in-unity/"/>
         <id>https://emergentbehavior.com/gpu-animation-in-unity/</id>
 
-        <updated>2022-11-07T12:30:45-05:00</updated>
+        <updated>2022-11-06T22:53:50-05:00</updated>
             <summary>
                 <![CDATA[
-                     TL;DR: On Github, I posted a GPU Animation package that you can get HERE. When you want to draw a LOT of characters at once, using Skinned Meshes in Unity quickly hits a performance wall. You could probably get away with 100, but 1000&hellip;
+                    TL;DR: On Github, I posted a GPU Animation package that you can get HERE. When you want to draw a LOT of characters at once, using Skinned Meshes in Unity quickly hits a performance wall. You could probably get away with 100, but 1000 will&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -32,36 +32,11 @@
 <figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/AnimatedTex.apng" alt="" width="762" height="264"></figure>
 <p>So each row represents all the vertices on the model. And then along the Y axis we've got time, broken up in to a section for each animation. Just sample the correct pixel's RGB, treat that as XYZ and you can put the vertex in the right place in a vertex shader.</p>
 <p>The problem is that there is no built in way to do this in Unity. </p>
-<p>For a while, I've been trying to get by with an Asset Store package called <a href="https://assetstore.unity.com/packages/tools/animation/mesh-animator-animate-massive-crowds-26009">Mesh Animator</a>. This tool was first released in 2014 as a CPU based mesh animation tool. It worked in a much simpler way, basically flipping through blend shapes. Somewhere along the way the author added in a GPU solution and it's quite well done, but the fact that's added onto the old method means there is a lot of extra stuff that I don't want. On top of that, the project has accumulated a few tough bugs. The author is kind and responds via email, but is not actively developing the package any more. Ultimately it's just too risky for me to keep in my project when it's such a fundamental function.</p>
+<p>For a while, I've been trying to get by with an Asset Store package called <a href="https://assetstore.unity.com/packages/tools/animation/mesh-animator-animate-massive-crowds-26009">Mesh Animator</a>. This tool was first released in 2014 as a CPU based mesh animation tool. Somewhere along the way the author added in a GPU solution and it's quite well done. Unfortunately, the project has accumulated a few tough bugs. The author is kind and responds via email, but ultimately it's just too unwieldy for me to be comfortable moving ahead with.</p>
 <h2>Saved by Open Source</h2>
-<p>Then the other day I found an open source (MIT) package on Github called <a href="https://github.com/codewriter-packages/Mesh-Animation">Mesh Animation.</a> It is a complete package but still minimal and elegantly written by <a href="https://github.com/vanifatovvlad">VladV</a>. I love the pipeline. You make a single asset which holds everything - references to animations, materials, and textures. This asset provides the baking interface and even has cool validation functionality courtesy of (the required) <a href="https://github.com/codewriter-packages/Tri-Inspector">Tri Inspector, also by VladV</a>.</p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/MeshAnimatorBakeUI.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-xs.png 300w ,https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-sm.png 480w ,https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-md.png 768w"  alt="Mesh Animation Bake UI" width="591" height="840"></figure>
-<p>While it was a great foundation, I found that when I went to use it, it wasn't set up the way I'd like. Luckily it is minimal so making changes wasn't that intimidating. I ended up forking the project and pushing my changes up to Github. My version is called <a href="https://github.com/benthroop/GPUAnimator">GPUAnimator</a>. More details are on the Github page.</p>
-<p>Below you can see the improvement between GPU and regular skinned meshes. </p>
-<table style="border-collapse: collapse; width: 100%; height: 100px;" border="1">
-<tbody>
-<tr style="height: 50px;">
-<td style="width: 16.6667%;">Method</td>
-<td style="width: 16.6667%; height: 50px;">Batches</td>
-<td style="width: 33.3333%; height: 50px;">FPS</td>
-<td style="width: 33.3333%; height: 50px;">ms</td>
-</tr>
-<tr>
-<td style="width: 16.6667%;">Skinned</td>
-<td style="width: 16.6667%;">847</td>
-<td style="width: 33.3333%;">90</td>
-<td style="width: 33.3333%;">11.0</td>
-</tr>
-<tr style="height: 50px;">
-<td style="width: 16.6667%;">GPU</td>
-<td style="width: 16.6667%; height: 50px;">18</td>
-<td style="width: 33.3333%; height: 50px;">260</td>
-<td style="width: 33.3333%; height: 50px;">4.0</td>
-</tr>
-</tbody>
-</table>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/GPUPerf-Opt.gif" alt="" width="600" height="457"></figure>
-<p>Let me know if you use it and how it goes.</p>
+<p>Then the other day I found an open source package on Github called <a href="https://github.com/codewriter-packages/Mesh-Animation">Mesh Animation.</a> It is a complete package but still minimal and elegantly written by <a href="https://github.com/vanifatovvlad">VladV</a>. I love the pipeline. You make a single asset which holds everything - references to animations, materials, and textures. This asset provides the baking interface and even has cool validation functionality courtesy of (the required) <a href="https://github.com/codewriter-packages/Tri-Inspector">Tri Inspector, also by VladV</a>.</p>
+<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/20/MeshAnimatorBakeUI.png" alt="Mesh Animation Bake UI" width="591" height="840" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-xs.png 300w ,https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-sm.png 480w ,https://emergentbehavior.com/media/posts/20/responsive/MeshAnimatorBakeUI-md.png 768w"></figure>
+<p>While it was a great foundation, I found that when I went to use it, it wasn't quite set up the way I'd like. Luckily it is minimal so making changes wasn't that intimidating. I ended up forking the project and pushing my changes up to Github. My version is called <a href="https://github.com/benthroop/GPUAnimator">GPUAnimator</a>. Let me know if you use it and how it goes.</p>
 <h4><a href="https://github.com/benthroop/GPUAnimator">Link to GPUAnimator Github project.</a></h4>
 <p> </p>
             ]]>
@@ -74,17 +49,18 @@
         </author>
         <link href="https://emergentbehavior.com/i-have-the-power-of-compute-shaders/"/>
         <id>https://emergentbehavior.com/i-have-the-power-of-compute-shaders/</id>
+        <media:content url="https://emergentbehavior.com/media/posts/14/GameOfLife-01-2.gif" medium="image" />
 
-        <updated>2022-01-13T16:10:27-05:00</updated>
+        <updated>2021-06-04T11:58:22-04:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://emergentbehavior.com/media/posts/14/GameOfLife-01-2.gif" alt="" />
-                     A few months ago a tweet caught my eye. A guy named @arsiliath was offering a course described as an "advanced workshop [that] introduces compute shaders via a series of video tutorials related to biological &amp; physical simulation." I got on the waiting list&hellip;
+                    A few months ago a tweet caught my eye. A guy named @arsiliath was offering a course described as an "advanced workshop [that] introduces compute shaders via a series of video tutorials related to biological &amp; physical simulation." I got on the waiting list for&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://emergentbehavior.com/media/posts/14/GameOfLife-01-2.gif" alt="" />
+                    <p><img src="https://emergentbehavior.com/media/posts/14/GameOfLife-01-2.gif" class="type:primaryImage" alt="" /></p>
                 <figure class="post__image post__image--wide"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/14/ezgif.com-gif-maker.gif" alt="" width="770" height="182"></figure>
 <p>A few months ago a tweet caught my eye. A guy named <a href="https://twitter.com/arsiliath?lang=en">@arsiliath</a> was offering a course described as an "<a href="https://arsiliath.gumroad.com/l/compute-shaders">advanced workshop [that] introduces compute shaders via a series of video tutorials related to biological &amp; physical simulation.</a>" I got on the waiting list for the next session, and got in for the April 2021 workshop. </p>
 <p><em>(Update Dec 2021: Arsiliath no longer offers this as a live class, but has moved all the materials into a package on Gumroad you can do at your own pace. I've updated the link above to point there.)</em></p>
@@ -106,82 +82,6 @@
         </content>
     </entry>
     <entry>
-        <title>Brackeys Game Jam 2021.1</title>
-        <author>
-            <name>Ben</name>
-        </author>
-        <link href="https://emergentbehavior.com/brackeys-game-jam-20211/"/>
-        <id>https://emergentbehavior.com/brackeys-game-jam-20211/</id>
-
-        <updated>2021-06-11T06:53:28-04:00</updated>
-            <summary>
-                <![CDATA[
-                    My 11 year old son, his friend and I made a game for the Brackeys Game Jam in February 2021, during the pandemic. If you want to skip right to the game, here you go: Click here to play Bowling for Monsters in your browser&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <p>My 11 year old son, his friend and I made a game for the Brackeys Game Jam in February 2021, during the pandemic. If you want to skip right to the game, here you go:</p>
-<p><a href="https://captainexpo.itch.io/bowling-for-monsters">Click here to play Bowling for Monsters in your browser on Itch.io</a></p>
-<figure class="post__image" ><img loading="lazy" src="https://emergentbehavior.com/media/posts/13/BFM_Screen.jpg" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/BFM_Screen-xs.jpg 300w ,https://emergentbehavior.com/media/posts/13/responsive/BFM_Screen-sm.jpg 480w ,https://emergentbehavior.com/media/posts/13/responsive/BFM_Screen-md.jpg 768w"  alt="Dr. Sletzer is the first monster you meet." width="800" height="501">
-<figcaption >Dr Sletzer is the first monster you meet.</figcaption>
-</figure>
-<!--<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://frameinteractive.com/bfm/index.html" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></figure>-->
-<h2>Or... How to make a game with two 11 year olds</h2>
-<p>I've done a number of game jams, both solo and with teams of adults, but I've never done one with two 6th graders. This was different because the most important thing to me was that they had a positive experience. However I also know that most jams, especially for first timers, are disasters! So managing expectations was key.</p>
-<p>The first thing I did was ask them what they wanted to get out of it. My son, Elliot, said his priority was to finish and to make something that did well in the jam rankings. His friend Kaung just wanted to have fun. So I took that as my challenge, to execute on their goals and make this feel like their game.</p>
-<figure class="post__image" ><img loading="lazy" src="https://emergentbehavior.com/media/posts/13/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3.JPG" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-xs.JPG 300w ,https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-sm.JPG 480w ,https://emergentbehavior.com/media/posts/13/responsive/63563663100__FB723FD3-A7AE-44C7-835A-0AE11129C0C1-3-md.JPG 768w"  alt="" width="1200" height="900">
-<figcaption >Here's our team photo, taken along the shore of Lake Champlain.</figcaption>
-</figure>
-<p>Next we figured out roles and responsibilities. Kaung has a way with words and is always making us laugh on Discord, so we wanted the game to have writing to support his skill. Luckily he is also quite technical and has run his own modded Minecraft server, coded in Visual Studio, and installed a number of ridiculous Discord Bots.</p>
-<p>Elliot can do quite a bit in game development already including programming, art, sound, music, and design. He'd published two Itch games on his own before this, <a href="https://captainexpo.itch.io/acorn-hunt">Acorn Hunt</a> and <a href="#INTERNAL_LINK#/post/null" title="https://captainexpo.itch.io/seat-labor">Seat Labor.</a> He's an aspiring game maker just like his dad. Yes I am still aspiring too.</p>
-<p>So Elliot opted to focus on the art and music. That left me to do the programming and the organization. We made a little chart in Miro.com, which we used for our brainstorming. </p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-13-143822.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-143822-xs.png 300w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-143822-sm.png 480w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-143822-md.png 768w"  alt="" width="1543" height="1024"></figure>
-<h3>Time is precious</h3>
-<p>The first thing we did was figure out how much time we had to work with. We used a unit of 1 day and walked through the week for each worker. It turned out that between school, work, and life, we each had about 3 full workdays for the 7 day jam. This set expectations on scope early. This also set up some accountability and expectations which were important to a new team.</p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-13-144118.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-144118-xs.png 300w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-144118-sm.png 480w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-144118-md.png 768w"  alt="Schedule" width="1364" height="727"></figure>
-<h3>Choosing the design</h3>
-<p>We all pitched ideas that we wanted to do in the time we had. Some of the ideas were a bit big at first, but Elliot's experience with shipping his own games helped him to reign it in. Ultimately we had two designs to choose from that captured all of our skills and seemed doable.</p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-13-153356.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-153356-xs.png 300w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-153356-sm.png 480w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-13-153356-md.png 768w"  alt="" width="1437" height="744"></figure>
-<p>Both of these ideas seemed to work for our team. We sat on it for a few days, but then the theme was announced for the jam. It was "Stronger Together". The boys immediately saw how Bowling For Monsters was a better fit for the theme, so we went that way. Someday I'd like to come back to Skydiving Poet.</p>
-<h3>Tools and Pipelines</h3>
-<p>I felt like my biggest challenge, after picking a design that the boys felt invested in, was to figure out how they could work effectively without me. Art wasn't a big concern, becuase Elliot has his preferred tools already (Pixilart.com is his favorite). The writing was the thing. At first I thought we'd just set up a Google Sheet for Kaung, but after talking to <a href="twitter.com/ekanaut">Eka</a> I learned about <a href="https://yarnspinner.dev/">Yarn Spinner</a>.</p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-20-110302.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-110302-xs.png 300w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-110302-sm.png 480w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-110302-md.png 768w"  alt="Yarn Editor" width="1282" height="1020"></figure>
-<p>Yarn Spinner handles branching dialogue, setting variables, localization, and way more. After doing this project I'd use it again. The Unity integration is particularly neat, as they made a custom importer for .yarn files. </p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-20-110750.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-110750-xs.png 300w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-110750-sm.png 480w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-110750-md.png 768w"  alt="Yarn Importer in Unity" width="797" height="793"></figure>
-<p>It also comes with a Unity UI setup for displaying the dialogue in game, which I pretty much just used as is with a few tweaks.</p>
-<p>So Kaung was able to just hammer on stuff in the Yarn Editor and test in Unity without needing the game to work. He wrote some ridiculous stuff too. It was really fun to see what he did once his tools were working. We got tripped up a bit by the restriction that all Yarn nodes must be uniquely named. They all get loaded into a giant pile at game start. Once we figured that out and made each node &lt;Character&gt;.&lt;Thing&gt; that worked. </p>
-<h3>The Bowling Problem</h3>
-<p>Most of this project was pretty easy from the programming perspective. I just set up a loop between the bowling and dialogue segments using a simple state machine that used coroutines to sequence their transitions. The bowling segment though, presented a few challenges.</p>
-<p>The first issue was that the art style Elliot was doing was pretty low resolution pixel art. I had to figure out how to match this while still using 3D physics. He ended up drawing the alley art in perspective and so I just decided I would overlay some 3D objects and use a rendertexture to downres them. It worked nicely. </p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-20-111919.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-111919-xs.png 300w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-111919-sm.png 480w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-111919-md.png 768w"  alt="Bowling as Rendertexture" width="1356" height="912"></figure>
-<p>So, getting bowling going artistically and mechanically was about a day for me. However I still didn't understand how scoring worked in bowling. Even worse, once I DID think I understood it, I still didn't understand it!</p>
-<h3>Bowling Scoring is a Sick Joke</h3>
-<p>OK ok I know that sounds extreme, but there is a reason that bowling scoring is used as a programming test on job interviews. It's an interesting problem that seems simple but is not. This has really cluttered the internet with bad takes. Just try Googling it. You'll find every manner of overengineered Java solutions with a class for every aspect of the frame. All I wanted was a simple function that would take in an array of frames and calculate the score! Eventually I found something on StackOverflow that looked good.</p>
-<p>Thankfully after a lot of searching, the user <a href="https://codereview.stackexchange.com/users/105198/rainer-p" target="_blank" rel="noopener noreferrer">Ranier P</a> posted at the bottom of <a href="https://codereview.stackexchange.com/questions/209960/calculate-the-score-of-a-bowling-game" target="_blank" rel="noopener noreferrer">this Stack Overflow thread</a> and included a simple C# extension method that is the essence of scoring bowling:</p>
-<p><code></code></p>
-<pre>//C# List extensions method to calculate score<br>public static IEnumerable&lt;int&gt; Scores(this IList&lt;int&gt; pins)<br>{<br>   // Walk the list in steps of two rolls (= one frame)<br>   for (int i = 0; i + 1 &lt; pins.Count; i += 2)<br>   {<br>      // Neither strike nor spare<br>      if (pins[i] + pins[i + 1] &lt; 10)<br>      {<br>         yield return pins[i] + pins[i + 1];<br>         continue;<br>      }<br><br>      // Score can only be determined if third roll is available<br>      if (i + 2 &gt;= pins.Count)<br>         yield break;<br><br>      yield return pins[i] + pins[i + 1] + pins[i + 2];<br><br>      // In case of strike, advance only by one<br>      if (pins[i] == 10)<br>         i--;<br>   }<br>}<br><br>//economical storage and methods for each roll<br>public class BowlingScoring<br>{<br>   private List&lt;int&gt; pins = new List&lt;int&gt;();<br>   public void Roll(int n) =&gt; pins.Add(n);<br>   public void SetRoll(int idx, int score) =&gt; pins[idx] = score;<br>   public void Clear() =&gt; pins.Clear();<br>   public int Score(int frame) =&gt; pins.Scores().Take(frame).Sum();<br>}</pre>
-<p><code></code></p>
-<p>Now, you'd think that would do it, and I'd be done. But NO, a fundamental misunderstanding held me up. See, I didn't realize that in bowling (10 pin bowling that is), the scoring is based on ROLLS not FRAMES. The difference is that every frame does NOT have two rolls. I mistakenly thought that a strike was a roll of 10 and then an automatic roll of 0 after to fill the frame. This is wrong. A strike makes a frame have one roll. Once you understand this, it becomes apparent how a 300 game is possible. Each strike looks ahead two rolls, so in the case of three strikes in a row, the first frame resolves as 30. Thus, 10 frames that look ahead two frames to strikes yields 10 x 30 or 300.</p>
-<p>I did not understand this and it cost me a lot of time.</p>
-<p>Now, this just gets you the calculated score for each frame. It does not tell your UI how to present the frames. This was a whole other problem. You've got to draw an X if it's a strike, a / if it's a spare, and hold a blank frame if the strike or spare isn't resolved yet. Unfortunately I didn't figure out some simple way to do this and just beat it into submission by building a UI that updated on OnValidate and then I just entered values into the rolls list in the inspector until I couldn't break it.</p>
-<p>In its entirety, the bowling scoring system took me well over a day and I didn't even finish it on time for the jam. So after all that prep I was the one that ended up missing the mark! Nice lesson for the boys there.</p>
-<h3>Jam Submission</h3>
-<p>So we worked pretty casually during the week, which meant our final day, Saturday, was a rush. Of course, this meant that there were integration issues as we stuffed content into the game at the last minute... but the game was fun and funny! The characters had a lot of personality and the writing was full of surprises. Elliot even wrote a custom music loop for each character. His music for the bowling roll was also timed perfectly on the first try.</p>
-<p>Pretty close to the end we started implementing the ability system, which was where monsters would give you special bowling abilities after a conversation. We ended up finishing BIG BALL, QUICKSHOT, and PERFECT TIMING, each of which were quite fun to see. </p>
-<p>The boys worked really hard the last day and we managed to get the game submitted with a few minutes to spare. The feedback was great! Here's the jam submission link:</p>
-<p><a href="https://itch.io/jam/brackeys-5/rate/928181">https://itch.io/jam/brackeys-5/rate/928181</a></p>
-<figure class="post__image"><img loading="lazy"  src="https://emergentbehavior.com/media/posts/13/Screenshot-2021-03-20-120617.png" sizes="(min-width: 61.3125em) 50vw, 100vw" srcset="https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-120617-xs.png 300w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-120617-sm.png 480w ,https://emergentbehavior.com/media/posts/13/responsive/Screenshot-2021-03-20-120617-md.png 768w"  alt="Itch Submission Page" width="803" height="572"></figure>
-<p>This was pretty good for a first time submission from a group with two sixth graders! There were 1,885 entries in the jam, so this put team Cheesebucket in the top third. I'll take it.</p>
-<h3>Lessons</h3>
-<p>I think our team learned that you have to get done with your game at least a day early in a weeklong jam, so you can test test test and polish. While I put in a few solid days during the week (mainly because I was stressed that I would be the one that held the team up), the boys didn't do much during the school week. That rush on Friday and Saturday left us tired and sloppy (even me). So aiming to finish the game on Thursday or Friday would have been ideal, with a sense of urgency throughout the week. Granted, that is tough when you have jobs and school, but "sleep when you're dead" is what my Dad says.</p>
-<p>Most importantly, we hit on the boys goals of A) Finishing and B) Having Fun.</p>
-<p><a href="https://captainexpo.itch.io/bowling-for-monsters">Click here to play Bowling for Monsters in your browser on Itch.io</a><a href="https://captainexpo.itch.io/bowling-for-monsters"></a><a href="https://captainexpo.itch.io/bowling-for-monsters"></a></p>
-<p> </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
         <title>MIGS 2017 Talk - Blowing Things up in Unity</title>
         <author>
             <name>Ben</name>
@@ -189,7 +89,7 @@
         <link href="https://emergentbehavior.com/migs-2017-talk-blowing-things-up-in-unity/"/>
         <id>https://emergentbehavior.com/migs-2017-talk-blowing-things-up-in-unity/</id>
 
-        <updated>2020-12-28T12:09:35-05:00</updated>
+        <updated>2020-11-05T20:53:37-05:00</updated>
             <summary>
                 <![CDATA[
                     I was invited to speak at MIGS in Montreal in 2017 and gave a talk there. It was a bit of a surprise that they weren't recording the talks, but I was able to cobble together a recording of it anyway. I went up to&hellip;
@@ -211,17 +111,18 @@
         </author>
         <link href="https://emergentbehavior.com/headmaster-development-tools-talk/"/>
         <id>https://emergentbehavior.com/headmaster-development-tools-talk/</id>
+        <media:content url="https://emergentbehavior.com/media/posts/11/Screenshot-2020-10-21-120441.png" medium="image" />
 
-        <updated>2020-10-22T00:34:06-04:00</updated>
+        <updated>2019-11-21T12:05:00-05:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://emergentbehavior.com/media/posts/11/Screenshot-2020-10-21-120441.png" alt="" />
-                    We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster. 
+                    We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://emergentbehavior.com/media/posts/11/Screenshot-2020-10-21-120441.png" alt="" />
+                    <p><img src="https://emergentbehavior.com/media/posts/11/Screenshot-2020-10-21-120441.png" class="type:primaryImage" alt="" /></p>
                 <p>We did a session at the Frame office in October 2019 to go over some of the tools used to make Headmaster. </p>
 <div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/bN4-Gj8LsyI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe></div>
             ]]>
@@ -235,10 +136,10 @@
         <link href="https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/"/>
         <id>https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-2/</id>
 
-        <updated>2020-10-21T10:20:00-04:00</updated>
+        <updated>2017-06-06T09:56:00-04:00</updated>
             <summary>
                 <![CDATA[
-                     Our trip was easy and upon arrival in Cardiff we walked from our hotel downtown to the Champions League Festival on Cardiff Bay. Playstation ran a Headmaster tournament where the winner received two tickets to the match! This was an incredible opportunity and we were super excited&hellip;
+                    Our trip was easy and upon arrival in Cardiff we walked from our hotel downtown to the Champions League Festival on Cardiff Bay. Playstation ran a Headmaster tournament where the winner received two tickets to the match! This was an incredible opportunity and we were super excited to&hellip;
                 ]]>
             </summary>
         <content type="html">
@@ -246,12 +147,12 @@
                 <div class="n p">
 <div class="z ab ac ae af id ah ai">
 <p id="7d9d" data-selectable-paragraph="">Our trip was easy and upon arrival in Cardiff we walked from our hotel downtown to the Champions League Festival on Cardiff Bay. <strong class="jx ks">Playstation ran a </strong><a href="http://headmastergame.com/" class="bx dm ko kp kq kr" target="_blank" rel="noopener nofollow"><strong class="jx ks">Headmaster</strong></a><strong class="jx ks"> tournament where the winner received two tickets to the match! </strong>This was an incredible opportunity and we were super excited to be there for it.<br><br></p>
-<img loading="lazy" src="https://miro.medium.com/max/1450/1*wMnIZkwhM848qNIw1q_wGg.png" data-is-external-image="true"  alt="Image for post"></div>
+<img loading="lazy" src="https://miro.medium.com/max/1450/1*wMnIZkwhM848qNIw1q_wGg.png" alt="Image for post" data-is-external-image="true"></div>
 </div>
-<div class="ho ai"><img loading="lazy" src="https://miro.medium.com/max/1504/1*udzmQgy4SBfSd8M7kzyU0Q.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="ho ai"><img loading="lazy" src="https://miro.medium.com/max/1504/1*udzmQgy4SBfSd8M7kzyU0Q.png" alt="Image for post" data-is-external-image="true"></div>
 <div class="ho">
 <div class="n p">
-<div class="lk ll lm ln lo lp ae lq af lr ah ai"><img loading="lazy" src="https://miro.medium.com/max/1506/1*hjXJtVdwp5eTRr4X93ns-A.png" data-is-external-image="true"  alt="Image for post">
+<div class="lk ll lm ln lo lp ae lq af lr ah ai"><img loading="lazy" src="https://miro.medium.com/max/1506/1*hjXJtVdwp5eTRr4X93ns-A.png" alt="Image for post" data-is-external-image="true">
 <figure class="hp ho">
 <div class="hw r cp">
 <div class="lw hy r"><div class="post__iframe"><iframe loading="lazy" width="854" height="480" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FP_6ulIRu4dY%3Ffeature%3Doembed&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DP_6ulIRu4dY&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FP_6ulIRu4dY%2Fmaxresdefault.jpg&amp;key=d04bfffea46d4aeda930ec88cc64b87c&amp;type=text%2Fhtml&amp;schema=youtube" allowfullscreen="allowfullscreen" frameborder="0" title="Headmaster UCL 2017 Tournament Play" class="s t u fa ai" scrolling="auto" data-mce-fragment="1"></iframe></div></div>
@@ -270,7 +171,7 @@
 </div>
 <div class="ho">
 <div class="n p">
-<div class="lk ll lm ln lo lp ae lq af lr ah ai"><img loading="lazy" src="https://miro.medium.com/max/1133/1*xts_KHMYi6YMOd3xOl9VnQ.png" data-is-external-image="true"  alt="Image for post"><img loading="lazy" src="https://miro.medium.com/max/1501/1*Y6xIPKtq_o2alF4IgG1Lpg.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="lk ll lm ln lo lp ae lq af lr ah ai"><img src="https://miro.medium.com/max/1133/1*xts_KHMYi6YMOd3xOl9VnQ.png" alt="Image for post" data-is-external-image="true"><img loading="lazy" src="https://miro.medium.com/max/1501/1*Y6xIPKtq_o2alF4IgG1Lpg.png" alt="Image for post" data-is-external-image="true"></div>
 </div>
 </div>
 <div class="n p">
@@ -278,7 +179,7 @@
 <h1 data-selectable-paragraph=""> </h1>
 <h1 id="8d1f" class="lx ly bj bi ga lz ma mb mc md me mf mg mh mi mj mk ml mm mn mo cx" data-selectable-paragraph="">The Champions Village</h1>
 <p id="1a71" data-selectable-paragraph="">Right after the Tournament ended, it was time to head over to the match. We were a part of Playstation’s group, so we had passes to The Champions Village, which is like an all inclusive mini-resort to hang out at for a couple hours before game time. If there is a polar opposite to tailgating at a Buffalo Bills game, this was it. <a href="https://www.youtube.com/watch?v=xp8EOHBGl2o" class="bx dm ko kp kq kr" target="_blank" rel="noopener nofollow">These guys have some good video</a> of the experience and make it look appropriately fancy.<br><br></p>
-<img loading="lazy" src="https://miro.medium.com/max/815/1*zqZnlz9e9qiKFCKj5BOEqQ.png" data-is-external-image="true"  alt="Image for post">
+<img loading="lazy" src="https://miro.medium.com/max/815/1*zqZnlz9e9qiKFCKj5BOEqQ.png" alt="Image for post" data-is-external-image="true">
 <p id="1ce1" class="jv jw bj jx b jy jz ka kb kc kd ke kf kg kh ki kj kk kl km kn hj cx" data-selectable-paragraph="">Just like last year, inside the Champions Village was a Playstation hospitality “tent” with free food, drink, and another Headmaster station. But even better than last year, the fine gents from Playstation Access came by and ran up the scores, recording the whole bit. The video below should go right to the proper time for Headmaster business, but their whole video is another fun look at what it was like to be there at the match.</p>
 </div>
 </div>
@@ -315,7 +216,7 @@
 </div>
 </div>
 </div>
-<div class="ho ai"><img loading="lazy" src="https://miro.medium.com/max/1717/1*I9rD2X3oPpfmzadKpx17TQ.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="ho ai"><img loading="lazy" src="https://miro.medium.com/max/1717/1*I9rD2X3oPpfmzadKpx17TQ.png" alt="Image for post" data-is-external-image="true"></div>
 <div class="n p">
 <div class="z ab ac ae af id ah ai">
 <h1 data-selectable-paragraph=""> </h1>
@@ -325,7 +226,7 @@
 </div>
 <div class="ho">
 <div class="n p">
-<div class="lk ll lm ln lo lp ae lq af lr ah ai"><img loading="lazy" src="https://miro.medium.com/max/1503/1*L-JG768CZZvQsMarmYRMZg.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="lk ll lm ln lo lp ae lq af lr ah ai"><img loading="lazy" src="https://miro.medium.com/max/1503/1*L-JG768CZZvQsMarmYRMZg.png" alt="Image for post" data-is-external-image="true"></div>
 </div>
 </div>
 <div class="n p">
@@ -341,17 +242,17 @@
 </div>
 <div class="ho">
 <div class="n p">
-<div class="lk ll lm ln lo lp ae lq af lr ah ai"><img loading="lazy" src="https://miro.medium.com/max/1505/1*pbqKFKzWeCVCVOwooF7hrQ.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="lk ll lm ln lo lp ae lq af lr ah ai"><img loading="lazy" src="https://miro.medium.com/max/1505/1*pbqKFKzWeCVCVOwooF7hrQ.png" alt="Image for post" data-is-external-image="true"></div>
 </div>
 </div>
 <div class="n p">
-<div class="z ab ac ae af id ah ai"><img loading="lazy" src="https://miro.medium.com/max/845/1*1rkUIIjcknzOeJ9nq5jcaw.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="z ab ac ae af id ah ai"><img loading="lazy" src="https://miro.medium.com/max/845/1*1rkUIIjcknzOeJ9nq5jcaw.png" alt="Image for post" data-is-external-image="true"></div>
 </div>
-<div class="ho ai"><img loading="lazy" src="https://miro.medium.com/max/2099/1*bkCVvxL9WOaLsrOFeE04cQ.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="ho ai"><img loading="lazy" src="https://miro.medium.com/max/2099/1*bkCVvxL9WOaLsrOFeE04cQ.png" alt="Image for post" data-is-external-image="true"></div>
 <div class="n p">
-<div class="z ab ac ae af id ah ai"><img loading="lazy" src="https://miro.medium.com/max/810/1*S9m1xyNyUGKTQhU8hsQupg.png" data-is-external-image="true"  alt="Image for post"><img loading="lazy" src="https://miro.medium.com/max/798/1*fedjDxfVW7X12TXWiWC1Ow.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="z ab ac ae af id ah ai"><img src="https://miro.medium.com/max/810/1*S9m1xyNyUGKTQhU8hsQupg.png" alt="Image for post" data-is-external-image="true"><img loading="lazy" src="https://miro.medium.com/max/798/1*fedjDxfVW7X12TXWiWC1Ow.png" alt="Image for post" data-is-external-image="true"></div>
 </div>
-<div class="ho ai"><img loading="lazy" src="https://miro.medium.com/max/1503/1*hbRJ74ErB4vMnSM97cERGQ.png" data-is-external-image="true"  alt="Image for post"></div>
+<div class="ho ai"><img loading="lazy" src="https://miro.medium.com/max/1503/1*hbRJ74ErB4vMnSM97cERGQ.png" alt="Image for post" data-is-external-image="true"></div>
             ]]>
         </content>
     </entry>
@@ -363,7 +264,7 @@
         <link href="https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/"/>
         <id>https://emergentbehavior.com/headmaster-vr-at-the-2017-uefa-champions-league-final-part-1/</id>
 
-        <updated>2020-10-21T10:21:54-04:00</updated>
+        <updated>2017-05-31T09:52:00-04:00</updated>
             <summary>
                 <![CDATA[
                     I went to Milan for the UEFA Champions League final in 2016, where Headmaster was used as a promotional vehicle for Playstation VR. It was an amazing opportunity I never expected. The 2016 festival venue was by the Milan Cathedral, an absolutely gigantic structure with&hellip;
@@ -385,7 +286,7 @@
 </div>
 </figure>
 <p id="799e" class="ja jb bj jc b jd je jf jg jh ji jj jk jl jm jn jo jp jq jr js hd cx" data-selectable-paragraph="">This festival runs for a few days and is pretty much just a giant roiling football party. I spent my time with some other developers who have become good friends. <a href="http://twitter.com/iamguyceratops" class="bx dm jt ju jv jw" target="_blank" rel="noopener nofollow">Guy Richards</a>, who was at the time our man on the inside of Playstation Europe, was a fantastic host. Andreas Johnsson of <a href="http://www.tarsierstudios.com/" class="bx dm jt ju jv jw" target="_blank" rel="noopener nofollow">Tarsier Studios</a> (<a href="http://statik.institute/" class="bx dm jt ju jv jw" target="_blank" rel="noopener nofollow">Statik</a>, <a href="http://www.ign.com/articles/2017/04/26/little-nightmares-review" class="bx dm jt ju jv jw" target="_blank" rel="noopener nofollow">Little Nightmares</a>) and I improved diplomatic relations between the USA and Sweden by exchanging our currencies. It was funny, just a couple days ago we were talking on Skype about Gamedev Things™ and realized we both have been carrying these notes around since then and both of us, at that moment, had no other cash. He has a $2 bill and I have this 20 Kronor note.</p>
-<p><img loading="lazy" src="https://miro.medium.com/max/3264/1*ylPUJkmDJT_1T4TxW_POXg.png" data-is-external-image="true"  alt="Image for post"></p>
+<p><img loading="lazy" src="https://miro.medium.com/max/3264/1*ylPUJkmDJT_1T4TxW_POXg.png" alt="Image for post" data-is-external-image="true"></p>
 <p id="5a39" data-selectable-paragraph="">I was also fortunate to get to know <a href="https://twitter.com/IlariHMQ" class="bx dm jt ju jv jw" target="_blank" rel="noopener nofollow">Ilari Kuittinen</a> of <a href="https://www.housemarque.com/" class="bx dm jt ju jv jw" target="_blank" rel="noopener nofollow">Housemarque </a>(Alienation, Resogun) who had just started to talk about his studio’s collaboration with Eugene Jarvis on what has now been announced as <a href="https://www.youtube.com/watch?v=7DeoMXhzypU" class="bx dm jt ju jv jw" target="_blank" rel="noopener nofollow">Nex Machina.</a><br><br></p>
 <h1 id="6885" class="kv kw bj bi ga kx ky kz la lb lc ld le lf lg lh li lj lk ll lm cx" data-selectable-paragraph="">Match Day 2016</h1>
 <p id="8761" class="ja jb bj jc b jd ln jf jg lo ji jj lp jl jm lq jo jp lr jr js hd cx" data-selectable-paragraph="">On match day, we arrived at Milan’s San Siro stadium early for some food and drink in the Playstation FC Hospitality area, which also had a station for people to play Headmaster. I caught this shakycam footage of a stroll around the place, ending with some folks gawking at an unsuspecting player making a go of it.</p>
@@ -396,7 +297,7 @@
 <figcaption class="kr ks gz gx gy kt ku bi el cn bk bn">Headmaster being played inside the Playstation FC Hospitality Tent</figcaption>
 </figure>
 <p id="d085" class="ja jb bj jc b jd je jf jg jh ji jj jk jl jm jn jo jp jq jr js hd cx" data-selectable-paragraph="">After pregaming in this area for a few hours, we made our way to our seats and this is where I started to get really excited. I’m a pretty avid fan and this is just a huge match in a huge stadium. I am quite sure was built with alien technology. It is enormous.</p>
-<p><img loading="lazy" src="https://miro.medium.com/max/1843/1*O0UYi0QfpdsuXuR9mbmXhA.png" data-is-external-image="true"  alt="Image for post"></p>
+<p><img loading="lazy" src="https://miro.medium.com/max/1843/1*O0UYi0QfpdsuXuR9mbmXhA.png" alt="Image for post" data-is-external-image="true"></p>
 <p id="210f" class="ja jb bj jc b jd je jf jg jh ji jj jk jl jm jn jo jp jq jr js hd cx" data-selectable-paragraph="">And below is a video which is an attempt to capture the vibe of walking into the stadium. On the left of the frame you’ll see Andreas and Ilari, along with <a href="http://twitter.com/iamguyceratops" class="bx dm jt ju jv jw" target="_blank" rel="noopener nofollow">Guy Richards</a> (now of XBox) making fun of me for holding my phone on top of my head but I GOT THIS VIDEO! The audio in this clip brings back some great memories and hopefully it captures a fraction of what it’s like to be met with a wall of 80,000 chanting fans.</p>
 <figure class="jy jz ka kb kc kd">
 <div class="kk r cp">
@@ -414,7 +315,7 @@
         <link href="https://emergentbehavior.com/responding-to-john-walker-of-rock-paper-shotgun/"/>
         <id>https://emergentbehavior.com/responding-to-john-walker-of-rock-paper-shotgun/</id>
 
-        <updated>2020-10-21T10:24:05-04:00</updated>
+        <updated>2015-07-21T10:23:00-04:00</updated>
             <summary>
                 <![CDATA[
                     John Walker of Rock Paper Shotgun published an editorial that argued the new VR movement is destined to fail. As a developer of a VR game I do not want VR to fail, obviously. My decision to build a launch title for PS4's Project Morpheus&hellip;

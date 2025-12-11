@@ -3,12 +3,32 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2022-11-06T23:31:53-05:00</updated>
+    <updated>2025-12-11T12:46:11-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
     <id>https://emergentbehavior.com</id>
 
+    <entry>
+        <title>A Big Night</title>
+        <author>
+            <name>Ben</name>
+        </author>
+        <link href="https://emergentbehavior.com/a-big-night/"/>
+        <id>https://emergentbehavior.com/a-big-night/</id>
+
+        <updated>2025-12-11T12:46:11-05:00</updated>
+            <summary>
+                <![CDATA[
+                    We're having a party tonight with everyone we know in town. More soon!
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>We're having a party tonight with everyone we know in town. More soon!</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Elegant GPU Animation in Unity</title>
         <author>

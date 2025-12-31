@@ -943,6 +943,9 @@ textarea {
     position: fixed;
     top: 0;
     width: 40vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }
 @media all and (min-width: 112.5em) {
@@ -960,7 +963,7 @@ textarea {
   .main__left > header {
     padding: 0 4%;
     position: absolute;
-    top: calc(var(--navbar-height) + 3.75rem);
+    top: 5%
   }
 }
 @media all and (min-width: 56.25em) and (max-width: 112.4375em) {

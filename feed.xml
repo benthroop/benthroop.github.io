@@ -3,7 +3,7 @@
     <title>Emergent Behavior</title>
     <link href="https://emergentbehavior.com/feed.xml" rel="self" />
     <link href="https://emergentbehavior.com" />
-    <updated>2025-12-11T12:48:48-05:00</updated>
+    <updated>2025-12-31T16:22:11-05:00</updated>
     <author>
         <name>Ben</name>
     </author>
@@ -20,12 +20,12 @@
         <updated>2025-12-11T12:46:11-05:00</updated>
             <summary>
                 <![CDATA[
-                    We're having a party tonight with everyone we know in town. More soon!
+                    We're having a party tonight with everyone we know in town. This will be the culmination of almost 5 years of work, but it's just a short stop on a longer ride.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>We're having a party tonight with everyone we know in town. More soon!</p>
+                <p>We're having a party tonight with everyone we know in town. This will be the culmination of almost 5 years of work, but it's just a short stop on a longer ride.</p>
             ]]>
         </content>
     </entry>
@@ -172,7 +172,7 @@
         <content type="html">
             <![CDATA[
                 <p>I was invited to speak at MIGS in Montreal in 2017 and gave a talk there. It was a bit of a surprise that they weren't recording the talks, but I was able to cobble together a recording of it anyway.</p>
-<figure class="post__video"><iframe loading="lazy" width="560" height="314" src="https://www.youtube.com/embed/C-PfvXET8UU" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></figure>
+<div class="post__iframe"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/C-PfvXET8UU?si=DGlqBMicBHy9oVJu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></div>
 <p>I went up to Montreal a few days early and got an AirBnB to prep the talk from. I actually liked this approach because I could really concentrate, but it was a bit stressful crunching it together at the last minute.</p>
 <p>I mention in the talk that I would post this code to Github, but never got around to doing that. If you are interested hit me up on the <a href="https://emergentbehavior.com/contact/">contact form</a> and I'll send it to you.</p>
             ]]>

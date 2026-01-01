@@ -943,9 +943,7 @@ textarea {
     position: fixed;
     top: 0;
     width: 40vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
   }
 }
 @media all and (min-width: 112.5em) {
@@ -961,19 +959,30 @@ textarea {
 }
 @media all and (min-width: 56.25em) {
   .main__left > header {
-    padding: 0 4%;
+    padding-top: 5vh;
+    padding-right: 4%;
+    padding-bottom: 3%;
+    padding-left: 4%;
     position: absolute;
-    top: 5%
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }
 @media all and (min-width: 56.25em) and (max-width: 112.4375em) {
   .main__left > header {
-    padding: 0 10%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media all and (min-width: 112.5em) {
   .main__left > header {
-    padding: 0 8%;
+    padding-left: 8%;
+    padding-right: 8%;
   }
 }
 .main__left > header a {
@@ -1027,8 +1036,9 @@ textarea {
 
 .hero {
   margin: 0;
-  height: 100%;
   left: 0;
+  right: 0;
+  bottom: 0;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -1044,20 +1054,20 @@ textarea {
   width: 100%;
 }
 .hero > img {
-  height: var(--hero-height);
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100vw;
+  width: 100%;
 }
 @media all and (min-width: 56.25em) {
   .hero > img {
-    height: 100vh;
-    width: 40vw;
+    height: 100%;
+    width: 100%;
   }
 }
 @media all and (min-width: 112.5em) {
   .hero > img {
-    width: 50vw;
+    width: 100%;
   }
 }
 .hero__caption {

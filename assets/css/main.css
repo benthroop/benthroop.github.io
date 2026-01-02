@@ -894,6 +894,26 @@ textarea {
 @media all and (max-width: 56.1875em) {
   .menu-toggle {
     border-color: var(--light);
+    -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+            transform: scale(3);
+    -webkit-transform-origin: right center;
+            transform-origin: right center;
+  }
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+@media all and (max-width: 56.1875em) {
+  .menu-toggle:hover, .menu-toggle:focus {
+    -webkit-transform: scale(3);
+        -ms-transform: scale(3);
+            transform: scale(3);
   }
 }
 /* Hide hamburger menu on non-mobile sizes */
@@ -914,14 +934,6 @@ textarea {
         -ms-transform: translateX(var(--side-nav-width));
             transform: translateX(var(--side-nav-width));
   }
-}
-.menu-toggle:hover, .menu-toggle:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
-  -webkit-transform: none;
-      -ms-transform: none;
-          transform: none;
 }
 .menu-toggle-box {
   width: 30px;
@@ -1035,7 +1047,6 @@ textarea {
   .main__left {
     order: 0;
     height: var(--mobile-main-left-height);
-    min-height: var(--mobile-main-left-height);
     overflow: hidden;
   }
 
@@ -1056,7 +1067,6 @@ textarea {
 }
 .main__left {
   background: var(--hero-bg);
-  min-height: var(--hero-height);
   position: relative;
 }
 @media all and (min-width: 56.25em) {
@@ -1075,7 +1085,7 @@ textarea {
 }
 .main__left > header {
   color: var(--hero-text-color);
-  padding: 3%;
+  padding-right: 100px;
   position: relative;
   z-index: 2;
 }
@@ -1140,7 +1150,7 @@ textarea {
 }
 .main__right > div {
   max-width: 100%;
-  padding-top: 3.2rem;
+  padding-top: 0rem;
 }
 @media all and (min-width: 37.5em) and (max-width: 56.1875em) {
   .main__right > div {

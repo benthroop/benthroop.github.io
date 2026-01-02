@@ -4,7 +4,7 @@
   --entry-width: 62ch;
   --hero-height: 15vh;
   /* Mobile: height of `.main__left` panel (change this to taste) */
-  --mobile-main-left-height: 5vh;
+  --mobile-main-left-height: 150px;
   --hero-bg: #000000;
   --hero-text-color: #FFFFFF;
   --hero-border-color: rgba(255,255,255,0.2);
@@ -30,15 +30,6 @@
   --color-rgb: 166,117,46;
   --text-color: #262626;
   --headings-color: #262626;
-}
-
-/* iOS Safari can compute `vh` against a smaller visual viewport (URL bar showing),
-   which makes `vh`-sized blocks appear shorter than expected. Prefer `lvh` when available. */
-@supports (height: 1lvh) {
-  :root {
-    --hero-height: 15lvh;
-    --mobile-main-left-height: 5lvh;
-  }
 }
 
 .facebook:hover svg {
@@ -662,21 +653,28 @@ textarea {
 /* Wrapper + Header ------------------------ */
 .container {
   max-width: 100%;
-  -webkit-transition: 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
-  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
-  -o-transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform;
-  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform;
-  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform, 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
-}
-.container.is-menu {
-  -webkit-transform: translateX(calc(-1 * var(--side-nav-width)));
-      -ms-transform: translateX(calc(-1 * var(--side-nav-width)));
-          transform: translateX(calc(-1 * var(--side-nav-width)));
 }
 
 .content {
   min-height: 100vh;
   position: relative;
+  -webkit-transition: 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
+  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
+  -o-transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform;
+  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform;
+  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform, 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
+  will-change: transform;
+}
+
+/*
+  Off-canvas menu:
+  - Don't transform `.container` (it breaks `position: fixed` descendants after scrolling)
+  - Slide the `.menu` itself, and shift `.content` to make room
+*/
+.container.is-menu .content {
+  -webkit-transform: translateX(calc(-1 * var(--side-nav-width)));
+      -ms-transform: translateX(calc(-1 * var(--side-nav-width)));
+          transform: translateX(calc(-1 * var(--side-nav-width)));
 }
 
 @media all and (max-width: 56.1875em) {
@@ -779,9 +777,20 @@ textarea {
   right: 0;
   top: 0;
   width: var(--side-nav-width);
+  z-index: 2003;
+  -webkit-transition: 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
+  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
+  -o-transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform;
+  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform;
+  transition: 0.5s cubic-bezier(0, 0.98, 1, 1) transform, 0.5s cubic-bezier(0, 0.98, 1, 1) -webkit-transform;
   -webkit-transform: translateX(var(--side-nav-width));
       -ms-transform: translateX(var(--side-nav-width));
           transform: translateX(var(--side-nav-width));
+}
+.container.is-menu .menu {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
 }
 .menu > ul {
   margin: 1.5rem 2rem;
@@ -885,11 +894,6 @@ textarea {
 @media all and (max-width: 56.1875em) {
   .menu-toggle {
     border-color: var(--light);
-    -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-            transform: scale(1.5);
-    -webkit-transform-origin: right center;
-            transform-origin: right center;
   }
 }
 /* Hide hamburger menu on non-mobile sizes */
@@ -900,12 +904,12 @@ textarea {
   }
 
   /* If the user opens the menu on mobile then resizes to desktop, force the layout back */
-  .container.is-menu {
+  .container.is-menu .content {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  .menu {
+  .container.is-menu .menu {
     -webkit-transform: translateX(var(--side-nav-width));
         -ms-transform: translateX(var(--side-nav-width));
             transform: translateX(var(--side-nav-width));
@@ -918,14 +922,6 @@ textarea {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-}
-@media all and (max-width: 56.1875em) {
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-            transform: scale(1.5);
-  }
 }
 .menu-toggle-box {
   width: 30px;
@@ -1038,8 +1034,8 @@ textarea {
 
   .main__left {
     order: 0;
-    height: var(--mobile-main-left-height-px, var(--mobile-main-left-height));
-    min-height: var(--mobile-main-left-height-px, var(--mobile-main-left-height));
+    height: var(--mobile-main-left-height);
+    min-height: var(--mobile-main-left-height);
     overflow: hidden;
   }
 
@@ -1140,11 +1136,6 @@ textarea {
     height: 100%;
     margin-top: calc(var(--navbar-height) + .2rem);
     width: 60%;
-  }
-}
-@media all and (min-width: 112.5em) {
-  .main__right {
-    
   }
 }
 .main__right > div {

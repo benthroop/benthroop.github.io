@@ -885,6 +885,11 @@ textarea {
 @media all and (max-width: 56.1875em) {
   .menu-toggle {
     border-color: var(--light);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: right center;
+            transform-origin: right center;
   }
 }
 /* Hide hamburger menu on non-mobile sizes */
@@ -913,6 +918,14 @@ textarea {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
+}
+@media all and (max-width: 56.1875em) {
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 .menu-toggle-box {
   width: 30px;

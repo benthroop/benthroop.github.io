@@ -2,7 +2,9 @@
 :root {
   --navbar-height: 5.25rem;
   --entry-width: 62ch;
-  --hero-height: 40vh;
+  --hero-height: 15vh;
+  /* Mobile: height of `.main__left` panel (change this to taste) */
+  --mobile-main-left-height: 5vh;
   --hero-bg: #000000;
   --hero-text-color: #FFFFFF;
   --hero-border-color: rgba(255,255,255,0.2);
@@ -676,6 +678,7 @@ textarea {
     display: flex;
     padding: 0 3% 0 3%;
       background-color: black;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 3;
@@ -809,6 +812,49 @@ textarea {
   text-transform: none;
 }
 
+/* Mobile-only "All Posts" inside slide-out menu */
+.menu__posts {
+  display: none;
+  margin: 1.5rem 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media all and (max-width: 56.1875em) {
+  .menu__posts {
+    display: block;
+  }
+  /* hide the bottom-of-page list on mobile; it lives in the left panel markup */
+  .main__all-posts {
+    display: none;
+  }
+}
+.menu__posts-title {
+  color: var(--side-nav-link-hover);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+}
+.menu__posts-list {
+  margin: 0;
+}
+.menu__posts-item {
+  padding: 0.35rem 0;
+}
+.menu__posts-item a {
+  color: var(--side-nav-link);
+  display: block;
+  text-decoration: none;
+}
+.menu__posts-item a:hover {
+  color: var(--side-nav-link-hover);
+  text-decoration: none;
+}
+.menu__posts-item small {
+  color: var(--side-nav-link);
+  opacity: 0.85;
+}
+
 .menu-toggle {
   background: none;
   -webkit-box-shadow: none;
@@ -830,6 +876,25 @@ textarea {
 @media all and (max-width: 56.1875em) {
   .menu-toggle {
     border-color: var(--light);
+  }
+}
+/* Hide hamburger menu on non-mobile sizes */
+@media all and (min-width: 56.25em) {
+  .menu-toggle,
+  .top__item--right {
+    display: none !important;
+  }
+
+  /* If the user opens the menu on mobile then resizes to desktop, force the layout back */
+  .container.is-menu {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .menu {
+    -webkit-transform: translateX(var(--side-nav-width));
+        -ms-transform: translateX(var(--side-nav-width));
+            transform: translateX(var(--side-nav-width));
   }
 }
 .menu-toggle:hover, .menu-toggle:focus {
@@ -931,6 +996,45 @@ textarea {
   content: " ";
   display: block;
   clear: both;
+}
+
+/* Mobile layout: put `.main__left` (hero/side) above `.main__right` and reduce its height */
+@media all and (max-width: 56.1875em) {
+  /* Some templates wrap the left/right panels inside an `.post` element (frontpage),
+     while others render them directly under `.main` (post pages). Handle both. */
+  .main,
+  .post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* `.main:after` becomes a flex item when `.main` is display:flex; remove it on mobile. */
+  .main:after {
+    content: none;
+    display: none;
+  }
+
+  .main__left {
+    order: 0;
+    height: var(--mobile-main-left-height);
+    min-height: var(--mobile-main-left-height);
+    overflow: hidden;
+  }
+
+  .main__right {
+    order: 1;
+  }
+
+  /* Mobile: overlay the header text on top of the left panel (same size with/without hero image) */
+  .main__left > header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 1rem 4%;
+  }
 }
 .main__left {
   background: var(--hero-bg);

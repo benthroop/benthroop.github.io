@@ -1038,8 +1038,8 @@ textarea {
 
   .main__left {
     order: 0;
-    height: var(--mobile-main-left-height);
-    min-height: var(--mobile-main-left-height);
+    height: var(--mobile-main-left-height-px, var(--mobile-main-left-height));
+    min-height: var(--mobile-main-left-height-px, var(--mobile-main-left-height));
     overflow: hidden;
   }
 

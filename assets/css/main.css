@@ -1046,7 +1046,6 @@ textarea {
 
   .main__left {
     order: 0;
-    height: var(--mobile-main-left-height);
     overflow: hidden;
   }
 
